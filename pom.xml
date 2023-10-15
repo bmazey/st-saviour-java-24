@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <build>
-        <finalName>maven-unit-test</finalName>
+        <finalName>2024</finalName>
         <plugins>
 
             <plugin>
