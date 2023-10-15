@@ -1,4 +1,5 @@
 package fundamentals;
+
 public class Palindrome {
     /*
      * A palindrome is a word that retains the same spelling when reversed.
