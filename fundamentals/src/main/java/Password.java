@@ -1,7 +1,7 @@
 public class Password {
     /*
-     * the Password class contains a static method generatePassword() which returns a String.
-     * the returned String meets the following password complexity requirements:
+     * The Password class contains a static method generatePassword() which returns a String.
+     * The returned String meets the following password complexity requirements:
      *     - the generated password must contain ten total characters
      *     - the first five characters must be lowercase letters
      *     - the next four characters must be digits between [0-9]
