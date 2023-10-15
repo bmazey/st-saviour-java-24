@@ -1,3 +1,4 @@
+package fundamentals;
 public class Password {
     /*
      * Our Password class contains a static method generatePassword() which returns a String.

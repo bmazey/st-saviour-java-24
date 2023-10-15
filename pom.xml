@@ -5,11 +5,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>st.saviour.org</groupId>
-    <artifactId>2024</artifactId>
+    <artifactId>saviour-2024</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.10.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
     <build>
-        <finalName>2024</finalName>
+        <finalName>saviour-2024</finalName>
         <plugins>
 
             <plugin>

@@ -1,3 +1,4 @@
+package fundamentals;
 public class FizzBuzz {
     /*
      * Our FizzBuzz class takes an int i and returns a String ...
