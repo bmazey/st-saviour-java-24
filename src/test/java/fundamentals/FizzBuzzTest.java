@@ -23,4 +23,9 @@ public class FizzBuzzTest {
         // TODO - add more test cases ...
     }
 
+    @Test
+    public void testMultipleOfNothing() {
+        assertEquals("fizz", FizzBuzz.fizzBuzz(1));
+        // TODO - add more test cases ...
+    }
 }
