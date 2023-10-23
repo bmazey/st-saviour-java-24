@@ -10,7 +10,13 @@ public class FizzBuzz {
      */
 
     public static String fizzBuzz(int i) {
-        // TODO - implement fizzBuzz() method
-        return "";
+        String result = "";
+        
+        // check if int i is a multiple of 3
+        if (i % 3 == 0) {
+            result += "fizz";
+        }
+        
+        return result;
     }
 }
