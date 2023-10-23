@@ -13,6 +13,14 @@ public class Password {
 
     public static String generatePassword() {
         // TODO - implement generatePassword() ...
+
+        Random r = new Random();
+        int random = r.nextInt(bound:26);
+
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        System.out.println("random number: " + random + "character: "+ alphabet.charAt(random));
+
+
         return "";
     }
 }
