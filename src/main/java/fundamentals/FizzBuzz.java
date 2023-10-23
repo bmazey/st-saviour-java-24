@@ -1,7 +1,7 @@
 package fundamentals;
 
 public class FizzBuzz {
-    /*
+/*
      * Our FizzBuzz class takes an int i and returns a String ...
      *     - if int i is a multiple of 3, return "fizz"
      *     - if int i is a multiple of 5, return "buzz"
@@ -10,7 +10,20 @@ public class FizzBuzz {
      */
 
     public static String fizzBuzz(int i) {
+         String result = "";
         // TODO - implement fizzBuzz() method
-        return "";
+
+        if (i % 3 == 0) { 
+        result += "fizz";
+        } 
+        if (i % 5 == 0) {
+        result += "buzz";
+        }
+        if (i % 3 == 0 && i % 5 == 0) {
+        result = "fizzbuzz"; 
+        }
+        return result;
+
     }
 }
+    

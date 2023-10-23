@@ -10,6 +10,23 @@ public class Palindrome {
 
      public static boolean isPalindrome(String word) {
         // TODO - implement isPalindrome() method
-        return true;
+        String reverse = "";
+
+        for (int i = 0; i < word.length(); i++) {
+         reverse = word.charAt(i) + reverse;
+        }
+
+        System.out.println("reverse: " + reverse);
+
+        int left = 0, right = word.length() - 1;
+
+        while(left < right)
+        {
+         if(word.charAt(left) != word.charAt(right));
+         {
+            return false;
+         }
+        } return true;
+
      }
 }
