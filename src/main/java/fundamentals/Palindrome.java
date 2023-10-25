@@ -9,7 +9,16 @@ public class Palindrome {
      */
 
      public static boolean isPalindrome(String word) {
-        // TODO - implement isPalindrome() method
-        return true;
+        // start by creating an empty string and building a reverse string
+        // how to compare two strings in java
+        String reverse = "";
+        for (int i = 0; i < word.length(); i++) {
+         reverse = word.charAt(i) + reverse; 
+         }
+         System.out.println("reverse: " + reverse);
+         
+         return true;
      }
 }
+        
+      

@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
-
     @Test
     public void testMultipleOfThree() {
         assertEquals("fizz", FizzBuzz.fizzBuzz(231));
@@ -25,7 +24,7 @@ public class FizzBuzzTest {
 
     @Test
     public void testMultipleOfNothing() {
-        assertEquals("fizz", FizzBuzz.fizzBuzz(1));
+        assertEquals("", FizzBuzz.fizzBuzz(1));
         // TODO - add more test cases ...
     }
 }
