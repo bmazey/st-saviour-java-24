@@ -7,5 +7,7 @@ public class Hello {
 
         boolean result = Palindrome.isPalindrome("hannah");
         System.out.println(result);
+
+        Password.generatePassword();
     }
 }

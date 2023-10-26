@@ -18,16 +18,7 @@ public class Palindrome {
 
         System.out.println("reverse: " + reverse);
 
-
-
-
         return reverse.equals(word);
-
-
-
-
-
-
 
      }
 }
