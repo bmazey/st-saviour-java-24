@@ -2,6 +2,7 @@ package fundamentals;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Random;
 
 public class PasswordTest {
     
@@ -9,7 +10,7 @@ public class PasswordTest {
     public void testPasswordLength() {
         assertEquals(10, Password.generatePassword().length());
     }
-
+    
     @Test
     public void testPasswordComplexity() {
         String password = Password.generatePassword();

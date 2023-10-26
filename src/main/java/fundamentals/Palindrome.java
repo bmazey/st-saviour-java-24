@@ -8,8 +8,16 @@ public class Palindrome {
      *     - False if the given word is NOT a valid palindrome
      */
 
-     public static boolean isPalindrome(String word) {
-        // TODO - implement isPalindrome() method
-        return true;
-     }
+    public static boolean isPalindrome(String word) {
+        String reverse = "";
+
+        for (int i = 0; i < word.length(); i++) {
+            reverse = word.charAt(i) + reverse;
+        }
+
+        System.out.println("Word: " + word);
+        System.out.println("Reverse: " + reverse);
+
+        return word.equals(reverse);
+    }
 }
