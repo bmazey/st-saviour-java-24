@@ -14,13 +14,33 @@ public class Password {
      */
 
     public static String generatePassword() {
-        // TODO - implement generatePassword() ...
-
         Random r = new Random();
-        int random = r.nextInt(26); 
+
+        String password = "";
+
 
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
-        System.out.println("random number: " + random + " character " + alphabet.charAt(random)); 
-        return "";
+        String digits = "0123456789";
+        String symbols = "!@#$%^&*";
+
+        //add random letters
+        for (int i = 0; i < 5; i++){
+            int random = r.nextInt(26);
+            password = password + alphabet.charAt(random);
+
+        }
+        //add random digits
+        for (int i = 0; i < 4; i++){
+            int random = r.nextInt(10);
+            password = password + digits.charAt(random);
+
+        }
+        //add a random symbol
+        int random = r.nextInt(8);
+        password = password + symbols.charAt(random);
+        //print password for testing purposes
+        System.out.println("password: " + password); 
+        //return the password
+        return password;
     }
 }

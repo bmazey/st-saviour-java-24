@@ -14,11 +14,13 @@ public class Palindrome {
         String reverse = "";
         for (int i = 0; i < word.length(); i++) {
          reverse = word.charAt(i) + reverse; 
-         }
+         } 
+
          System.out.println("reverse: " + reverse);
+         return (word.equals(reverse));
+         //will become the result
+         }
          
-         return true;
      }
-}
         
       
