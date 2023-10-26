@@ -1,32 +1,24 @@
 package fundamentals;
 
 public class Palindrome {
-    /*
+   /*   
      * A palindrome is a word that retains the same spelling when reversed.
      * Our Palindrome class contains a method isPalindrome() which takes a String and returns ...
      *     - True if the given word is a valid palindrome
      *     - False if the given word is NOT a valid palindrome
-     */
-
+     */ 
      public static boolean isPalindrome(String word) {
-        // TODO - implement isPalindrome() method
+      // TODO - implement isPalindrome() method
         String reverse = "";
 
         for (int i = 0; i < word.length(); i++) {
          reverse = word.charAt(i) + reverse;
-        }
+     } 
+     return word.equals(reverse);
+      
+   }
 
-        System.out.println("reverse: " + reverse);
+} 
 
-        int left = 0, right = word.length() - 1;
-
-        while(left < right)
-        {
-         if(word.charAt(left) != word.charAt(right));
-         {
-            return false;
-         }
-        } return true;
-
-     }
-}
+         
+  
