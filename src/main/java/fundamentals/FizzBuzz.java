@@ -12,7 +12,7 @@ public class FizzBuzz {
     public static String fizzBuzz(int i) {
         // TODO - implement fizzBuzz() method
         String result = "";
-
+// use mod command to see if there is a remainder 
         if (i % 3 == 0) {
             result += "fizz";
         }

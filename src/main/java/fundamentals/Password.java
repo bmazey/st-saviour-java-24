@@ -14,14 +14,14 @@ public class Password {
      */
 
     public static String generatePassword() {
-      
+      // set up our options for letters, digits and symbols
         String letters = "abcdefghijklmnopqrstuvwxyz";
         String digits = "0123456789";
         String symbols = "!@#$%^&*";
         
         StringBuilder password = new StringBuilder();
         Random random = new Random();
-
+// for loop repeating i<x many times
         for (int i = 0; i < 5; i++) {
             int index = random.nextInt(letters.length());
             password.append(letters.charAt(index));
@@ -36,7 +36,7 @@ public class Password {
         password.append(symbols.charAt(symbolIndex));
 
         // Shuffle the characters to make it unlikely that two passwords are equal
-        // String shuffledPassword = shuffleString(password.toString());
+        
 
         return password.toString();
     }
