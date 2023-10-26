@@ -10,6 +10,10 @@ public class Palindrome {
 
      public static boolean isPalindrome(String word) {
         // TODO - implement isPalindrome() method
-        return true;
+        String reversed = "";
+        for(int i=0; i< word.length(); i++){
+         reversed = word.charAt(i) + reversed;
+        }
+        return word.equals(reversed);
      }
 }
