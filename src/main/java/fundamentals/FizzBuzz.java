@@ -10,7 +10,16 @@ public class FizzBuzz {
      */
 
     public static String fizzBuzz(int i) {
-        // TODO - implement fizzBuzz() method
-        return "";
+        String result = "";
+        if (i % 3 ==0) {
+           result += "fizz";
+           // add fizz if three is a multiple of the integer
+        }
+        if (i % 5 == 0) {
+            result += "buzz";
+            // add buzz if five is a multiple of the integer
+        }
+// add fizzbuzz if three and five is a multiple of the integer 
+        return result;
     }
 }
