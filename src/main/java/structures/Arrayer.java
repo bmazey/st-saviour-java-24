@@ -1,5 +1,6 @@
 package structures;
 
+// documentation: https://www.baeldung.com/java-arrays-guide
 public class Arrayer {
     /*
      * evensOnly() takes an int array and returns a new array which contains
