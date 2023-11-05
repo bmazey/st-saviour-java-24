@@ -9,7 +9,12 @@ public class Palindrome {
      */
 
      public static boolean isPalindrome(String word) {
-        // TODO - implement isPalindrome() method
-        return true;
+        String reverse = "";
+
+        for(int i = 0; i < word.length(); i++) {
+         reverse = word.charAt(i) + reverse;
+        }
+
+        return word.equals(reverse);
      }
 }
