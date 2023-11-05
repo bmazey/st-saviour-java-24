@@ -40,5 +40,8 @@ public class MovieTest {
 
         // ensure no patrons are left in queue
         assertEquals(true, FiveNightsAtFreddys.isEmpty());
+
+        // attempt to dequeue from an empty Patrons queue
+        assertEquals("", FiveNightsAtFreddys.dequeue());
     }  
 }

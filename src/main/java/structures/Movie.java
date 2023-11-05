@@ -31,6 +31,8 @@ public class Movie {
     }
 
     // dequeue() removes a patron from the Patrons queue
+    // dequeue() should return an empty String instead of an error if you try to
+    // dequeue from an empty Patrons queue
     public String dequeue() {
         return "";
     }
