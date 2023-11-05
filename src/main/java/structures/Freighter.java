@@ -29,6 +29,8 @@ public class Freighter {
     }
 
     // pop() removes an item from the Containers list; pay close attention to the order!
+    // pop() should return an empty String instead of an error if you try to pop an
+    // item off an empty Containers stack
     public String pop() {
         return "";
     }

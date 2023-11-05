@@ -42,7 +42,10 @@ public class FreighterTest {
         assertEquals("Repel", SSAnne.pop());
         assertEquals("Paralyze Heal", SSAnne.pop());
 
-        // finally, check emptiness
+        // check emptiness
         assertEquals(true, SSAnne.isEmpty());
+
+        // attempt to pop an item off an empty Containers stack
+        assertEquals("", SSAnne.pop());
     }
 }
