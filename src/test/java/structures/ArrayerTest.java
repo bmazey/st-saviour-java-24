@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class ArrayerTest {
 
     @Test
-    public static void testEvensOnly() {
+    public void testEvensOnly() {
         int[] test = {5, 8, 17, 21, 15, 0, 6};
         int[] result = Arrayer.evensOnly(test);
 
@@ -27,7 +27,7 @@ public class ArrayerTest {
     }
 
     @Test
-    public static void testLastOfFourDigits() {
+    public void testLastOfFourDigits() {
         int[] test = {1200, 4343, 1789, 1897};
         int[] result = Arrayer.lastOfFourDigits(test);
 
@@ -49,7 +49,7 @@ public class ArrayerTest {
     }
 
     @Test
-    public static void testRoundUp() {
+    public void testRoundUp() {
         double[] test = {1.2, 0.4, 7.6, 8.9, 9.1};
         int[] result = Arrayer.roundUp(test);
 
@@ -67,7 +67,7 @@ public class ArrayerTest {
     }
 
     @Test
-    public static void testFindNegative() {
+    public void testFindNegative() {
         int[] test = {2, 0, 4, 16};
         int result = Arrayer.findNegative(test);
 

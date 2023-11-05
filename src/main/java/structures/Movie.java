@@ -31,16 +31,16 @@ public class Movie {
     }
 
     // dequeue() removes a patron from the Patrons queue
-    public void dequeue(String patron) {
-
+    public String dequeue() {
+        return "";
     }
 
-    // first() should return the first item in the Patrons queue
+    // first() reads the first item in the Patrons queue
     public String first() {
         return "";
     }
 
-    // last() should return the last item in the Patrons queue
+    // last() reads the last item in the Patrons queue
     public String last() {
         return "";
     }
