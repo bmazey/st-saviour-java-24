@@ -39,7 +39,7 @@ public class Arrayer {
      * integer in the input array. findNegative() should return -1 if all
      * integers in the provided array are positive.
      * 
-     * ex: [0, 4, -2, 17] -> 2 
+     * ex: [0, 4, -2, 17] -> [-2] 
      */
     public static int findNegative(int[] input) {
         return 0;
