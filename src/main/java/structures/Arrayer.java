@@ -15,7 +15,7 @@ public class Arrayer {
 
     /*
      * lastOfFourDigits() takes an int array which ONLY contains four digit 
-     * numbers. The method returns a new array which contains the last three digits 
+     * numbers [1000 - 9999]. The method returns a new array which contains the last three digits 
      * of each number, preserving the original order.
      * 
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
