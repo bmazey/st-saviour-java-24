@@ -6,4 +6,6 @@ public class Hello {
         System.out.println("new dawn, new day");
         // Password.generatePassword()
     }
+
+    // xor is its own inverse
 }
