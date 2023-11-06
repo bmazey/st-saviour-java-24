@@ -1,5 +1,7 @@
 package fundamentals;
 
+import java.util.Random;
+
 public class Password {
     /*
      * Our Password class contains a static method generatePassword() which returns a String.
@@ -13,6 +15,26 @@ public class Password {
 
     public static String generatePassword() {
         // TODO - implement generatePassword() ...
-        return "";
+        String letters = "abcdefghijklmnopqrstuvwxyz";
+        String digits = "0123456789";
+        String symbols = "!@#$%^&*";
+
+        StringBuilder password = new StringBuilder();
+        Random random = new Random();
+        for(int i = 0; i < 5; i++) {
+            password.append(letters.charAt(random.nextInt(letters.length())));
+        }
+
+        for (int i = 0; i < 4 ; i++) {
+            //int index = ;
+            password.append(digits.charAt(random.nextInt(digits.length())));
+        }
+
+        int symbolIndex = random.nextInt(symbols.length());
+        password.append(symbols.charAt(symbolIndex));
+
+        return password.toString();
+  
     }
+   
 }
