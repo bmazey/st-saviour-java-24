@@ -12,14 +12,15 @@ public class FizzBuzz {
     public static String fizzBuzz(int i) {
         // TODO - implement fizzBuzz() method
         String result = "";
-// use mod command to see if there is a remainder 
+// use mod command to see if there is a remainder if there is no remainder return fizz
         if (i % 3 == 0) {
             result += "fizz";
         }
-
+// do the same for 5 but return buzz
         if (i % 5 == 0) {
             result += "buzz";
         }
         return result;
     }
 }
+// if both apply both fizz and buzz returned

@@ -7,7 +7,7 @@ public class Palindrome {
      *     - True if the given word is a valid palindrome
      *     - False if the given word is NOT a valid palindrome
      */
-// Take word and reverse it then use the isPalndrome method to return true(Palindrome) or flase(Not Palindrome)
+// Take word and reverse it then use the isPalndrome method to return true(Palindrome) or false(Not Palindrome)
     public static boolean isPalindrome(String word) {
         String reverse = "";
 

@@ -18,10 +18,10 @@ public class Password {
         String letters = "abcdefghijklmnopqrstuvwxyz";
         String digits = "0123456789";
         String symbols = "!@#$%^&*";
-        
+        // use string builder method tobuild string without creating new string everytime 
         StringBuilder password = new StringBuilder();
         Random random = new Random();
-// for loop repeating i<x many times
+// for loop repeating i<x many times choosing psuedorandom letter from provided strin\g
         for (int i = 0; i < 5; i++) {
             int index = random.nextInt(letters.length());
             password.append(letters.charAt(index));
