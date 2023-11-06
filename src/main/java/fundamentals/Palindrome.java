@@ -13,12 +13,19 @@ public class Palindrome {
     */
     
       public static boolean isPalindrome(String word) {
-         // TODO - implement isPalindrome() method
+         // implements the isPalindrome method
          String reverse = "";
+         // sets up an empty string called reverse
          for (int i =0; i < word.length(); i++){
             reverse = word.charAt(i) + reverse;
+         // says that for each letter in the word until the endof the word 
+         // is reached, that letter will be added to the end of reverse
          }
          return word.equals(reverse);
+         // uses the equals method, which is a boolean, to return true if the 
+         // word is the same as its reverse, or false if it isnt. 
+
+
          
          
      }
