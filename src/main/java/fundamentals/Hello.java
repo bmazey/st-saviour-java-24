@@ -29,7 +29,7 @@ public class Hello {
         String context = "lie for you, die for you, paint the sky for you ";
         context += new String(Character.toChars(0x1F304));
         System.out.println(context);
-
+        
         // the plot of Office Space (1999)
         // https://en.wikipedia.org/wiki/Pentium_FDIV_bug
 

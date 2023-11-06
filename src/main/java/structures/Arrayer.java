@@ -11,6 +11,7 @@ public class Arrayer {
      */
     public static int[] evensOnly(int[] input) {
         // TODO implement evensOnly()
+        int evensOnly []= new int[] {1,5,10};
         return new int[0];
     }
 
