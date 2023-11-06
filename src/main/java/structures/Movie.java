@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * Picture a bunch of patrons (or fans) camped outside a movie theater
+ * Picture a line of patrons (or fans) camped outside a movie theater
  * for a major release. Generally speaking, the first guests to line up are the 
  * first to be admitted once the theater opens. By extension, the last in line
  * will be the last admitted. In Computer Science we call this common data
@@ -27,28 +27,32 @@ public class Movie {
 
     // enqueue() adds a patron to the Patrons queue
     public void enqueue(String patron) {
-        
+        // TODO implement enqueue()
     }
 
     // dequeue() removes a patron from the Patrons queue
     // dequeue() should return an empty String instead of an error if you try to
     // dequeue from an empty Patrons queue
     public String dequeue() {
+        // TODO implement dequeue()
         return "";
     }
 
-    // first() reads the first item in the Patrons queue
+    // first() reads the first item in the Patrons queue and returns the name
     public String first() {
+        // TODO implement first()
         return "";
     }
 
-    // last() reads the last item in the Patrons queue
+    // last() reads the last item in the Patrons queue and returns the name
     public String last() {
+        // TODO implement last()
         return "";
     }
 
     // isEmpty() should return true if the Patrons queue is empty and false otherwise 
     public boolean isEmpty() {
+        // TODO implement isEmpty()
         return true;
     }
     

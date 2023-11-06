@@ -34,8 +34,8 @@ public class Hello {
         // https://en.wikipedia.org/wiki/Pentium_FDIV_bug
 
         // testing equality
-        String pandas = "pandas";
-        String saviour = "pandas";
+        // String pandas = "pandas";
+        // String saviour = "pandas";
 
         // interned by the compiler
         // if (saviour == pandas) {

@@ -10,6 +10,7 @@ public class Arrayer {
      * ex: [3, 7, 12, 4, 13, 0] -> [12, 4, 0]
      */
     public static int[] evensOnly(int[] input) {
+        // TODO implement evensOnly()
         return new int[0];
     }
 
@@ -21,6 +22,7 @@ public class Arrayer {
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
      */
     public static int[] lastOfFourDigits(int[] input) {
+        // TODO implement lastOfFourDigits()
         return new int[0];
     }
 
@@ -31,6 +33,7 @@ public class Arrayer {
      * ex: [1.2, 3.6, 7.9, 4.1] -> [1, 4, 8, 4]
      */
     public static int[] roundUp(double[] input) {
+        // TODO implement roundUp()
         return new int[0];
     }
 
@@ -42,6 +45,7 @@ public class Arrayer {
      * ex: [0, 4, -2, 17] -> 2 
      */
     public static int findNegative(int[] input) {
+        // TODO implement findNegative()
         return 0;
     }
     
