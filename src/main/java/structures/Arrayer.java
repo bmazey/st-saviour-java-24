@@ -11,7 +11,7 @@ public class Arrayer {
      */
     public static int[] evensOnly(int[] input) {
         // TODO implement evensOnly()
-        int evensOnly []= new int[] {1,5,10};
+        
         return new int[0];
     }
 
@@ -46,8 +46,15 @@ public class Arrayer {
      * ex: [0, 4, -2, 17] -> 2 
      */
     public static int findNegative(int[] input) {
-        // TODO implement findNegative()
-        return 0;
+       for (int i = 0; i < input.length; i++){
+            if (input [i] < 0) {
+                //number is negative
+                return i;
+        }
+       }
+        return -1;
+        }
+        
     }
     
-}
+
