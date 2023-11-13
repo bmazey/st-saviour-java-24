@@ -10,25 +10,25 @@ public class Hello {
         // documentation: https://www.baeldung.com/java-primitives
 
         // integer operations
-        int a = 5;
-        int b = 2;
-        System.out.println(a / b);
+        //int a = 5;
+        //int b = 2;
+        //System.out.println(a / b);
 
-        double c = 3;
-        System.out.println(a / b * c);
+        //double c = 3;
+        //System.out.println(a / b * c);
 
         // casting 'down'
-        double d = 3.5;
-        System.out.println((int)d);
+        //double d = 3.5;
+        //System.out.println((int)d);
 
         // casting 'up'
-        int e = 4;
-        System.out.println((double)e);
+        //int e = 4;
+        //System.out.println((double)e);
 
         // char emojis
-        String context = "lie for you, die for you, paint the sky for you ";
-        context += new String(Character.toChars(0x1F304));
-        System.out.println(context);
+        //String context = "lie for you, die for you, paint the sky for you ";
+        //context += new String(Character.toChars(0x1F304));
+        //System.out.println(context);
         
         // the plot of Office Space (1999)
         // https://en.wikipedia.org/wiki/Pentium_FDIV_bug
@@ -65,5 +65,13 @@ public class Hello {
         // if ("pandas" == "pan" + "das") {
         //     System.out.println("pandas is equal to concat string pan + das");
         // }
+    }
+    int [] myArray = new int[4]; //create array
+    //int [] myArray = new int[4,3,2,1]; // array specified
+    System.out.prinln ("array length " + myArray.length);
+    System.out.println("first item: " + myArray[0]);
+    System.out.println("last item: " + myArray9myArray.length -1);
+    for (int i = 0; i < myArray.length; i++){
+
     }
 }
