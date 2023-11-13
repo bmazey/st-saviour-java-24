@@ -1,5 +1,7 @@
 package structures;
 
+import android.webkit.JsResult;
+
 // documentation: https://www.baeldung.com/java-arrays-guide
 public class Arrayer {
     /*
@@ -10,9 +12,27 @@ public class Arrayer {
      * ex: [3, 7, 12, 4, 13, 0] -> [12, 4, 0]
      */
     public static int[] evensOnly(int[] input) {
-        // TODO implement evensOnly()
-        
-        return new int[0];
+        int count = 0;//keeps track of amount of even numbers
+        for (int i = 0; i < input.length; i++){
+            if(input [i] % 2 == 0){
+                count++;
+            }
+        }
+        //create an array of the correct size
+        int [] result = new int [count];
+        int position = 0;
+        //go over input array again
+        for (int i = 0; i < input.length; i++) {
+            if (input [i] % 2 == 0) {
+                //check if current number is even
+                result [position] = input[i];
+                //add even number to result array
+                position ++;
+                //incrememnt position for the result array
+            }
+        }
+
+        return result;
     }
 
     /*
@@ -23,7 +43,17 @@ public class Arrayer {
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
      */
     public static int[] lastOfFourDigits(int[] input) {
-        // TODO implement lastOfFourDigits()
+       int [] result = new int[input.length];
+        int count = 0;
+        for (int i = 0; i < input.length; i++) {
+            int [] result = new int[count];
+        int position = 0;
+            //digit = (i % 10); //or save remainder in a variable
+
+            }
+        
+        }
+        
         return new int[0];
     }
 
@@ -55,6 +85,15 @@ public class Arrayer {
         return -1;
         }
         
+    public static int everyOther(int[] input){
+        //accepts an array of ints and returns a new array containing only numbers in even positions
+        int position = 0
+        for (int i = 0; i <input.length; i++){
+            if (i % 2 == 0){
+                position ++:
+            }
+        
+        }
     }
     
 
