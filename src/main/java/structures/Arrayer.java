@@ -10,10 +10,28 @@ public class Arrayer {
      * ex: [3, 7, 12, 4, 13, 0] -> [12, 4, 0]
      */
     public static int[] evensOnly(int[] input) {
-        // TODO implement evensOnly()
-        return new int[0];
-    }
+        // this varibe keeps track of the amount of even numbers. 
+        int count = 0;
+        for(int i = 0; i < input.length; i++) {
+            // number is even, incrememnt count by 1. 
+            if(input[i] % 2 ==0){
+                count++;
+            }
+        }
+        //create array of correct size
+        int[] result = new int[count];
+        int position = 0;
+        for (int i = 0; i < input.length; i++) {
+            if(input[i] % 2 == 0) {
+                result [position] = input[i];
+                position++;
+            }
+        }
 
+        return result;
+
+    }
+    
     /*
      * lastOfFourDigits() takes an int array which ONLY contains four digit 
      * numbers [1000 - 9999]. The method returns a new array which contains the last three digits 
@@ -22,8 +40,14 @@ public class Arrayer {
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
      */
     public static int[] lastOfFourDigits(int[] input) {
-        // TODO implement lastOfFourDigits()
-        return new int[0];
+
+        int[] result = new int[input.length];
+        for (int i = 0; i < input.length; i++) {
+            result[i] = input[i] % 10;
+        }
+
+
+        return result;
     }
 
     /*
@@ -34,6 +58,14 @@ public class Arrayer {
      */
     public static int[] roundUp(double[] input) {
         // TODO implement roundUp()
+        for (double i = 0; i < input.length; i++){
+            if(input[i] % 1 >= 0.5){
+                input[i] ++;
+            }
+        }
+
+
+
         return new int[0];
     }
 
@@ -46,7 +78,17 @@ public class Arrayer {
      */
     public static int findNegative(int[] input) {
         // TODO implement findNegative()
-        return 0;
+        for (int i = 0; i < input.length; i++) {
+            if(input[i] < 0) {
+            return i;
+            }
+        }
+        return -1;
     }
+        
+        
+//create a mthod "every other" which accepts an array (list)of ints and 
+//returns a new arraycontaining only the original numbers even positions 
+//create a test for it. 5 points for code and 5 for test
     
 }
