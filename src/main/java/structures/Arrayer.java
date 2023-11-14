@@ -10,8 +10,31 @@ public class Arrayer {
      * ex: [3, 7, 12, 4, 13, 0] -> [12, 4, 0]
      */
     public static int[] evensOnly(int[] input) {
-        // TODO implement evensOnly()
-        return new int[0];
+        // TODO implement evensOnly() 
+        int count = 0;
+        for(int i = 0; i < input.length; i++) {
+            // check to see if number is even
+            if(i % 2 == 0) {
+                // number is even, increment count by 1
+                count++;
+            }
+        }
+
+        // create an array of the correct size
+        int[] result = new int[count];
+        // start at position 0 for result array
+        int position = 0;
+        // go over the input array again
+        for(int i = 0; i < input.length; i++){
+            // check if the number is even again
+            if(input[i] % 2 == 0) {
+                // add the even number to the result array
+                result[position] = input[i];
+                // increment postion for the result array
+                position++;
+            }
+        }
+        return result;
     }
 
     /*
@@ -23,6 +46,11 @@ public class Arrayer {
      */
     public static int[] lastOfFourDigits(int[] input) {
         // TODO implement lastOfFourDigits()
+        int[] result = new int[input.length];
+        for(int i = 0; i < input.length; i++){
+            result [i] = (input [i]) % 10;
+        }
+        
         return new int[0];
     }
 
@@ -45,8 +73,15 @@ public class Arrayer {
      * ex: [0, 4, -2, 17] -> 2 
      */
     public static int findNegative(int[] input) {
-        // TODO implement findNegative()
-        return 0;
+         // TODO implement findNegative()
+        for(int i = 0; i < input.length; i++) {
+            if(input[i] < 0) {
+             // the number is negative
+                return i;
+            }
+            
+        }
+        // there were no negative integers in input[]
+        return -1;
     }
-    
 }
