@@ -43,19 +43,23 @@ public class Arrayer {
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
      */
     public static int[] lastOfFourDigits(int[] input) {
-       int [] result = new int[input.length];
         int count = 0;
         for (int i = 0; i < input.length; i++) {
-            int [] result = new int[count];
-        int position = 0;
-            //digit = (i % 10); //or save remainder in a variable
-
-            }
-        
+            //int [] result = new int[count];
+            count++;
+        }
+        int [] result = new int[input.length];
+        for (int i = 0; i <input.length; i++){
+             count = result.charAt (4); //???
         }
         
-        return new int[0];
+        return result;
     }
+        
+        
+        
+        
+    
 
     /*
      * roundUp() takes an array of doubles as input, and returns a new array of rounded
@@ -87,13 +91,16 @@ public class Arrayer {
         
     public static int everyOther(int[] input){
         //accepts an array of ints and returns a new array containing only numbers in even positions
-        int position = 0
+        int position = 0;
         for (int i = 0; i <input.length; i++){
             if (i % 2 == 0){
-                position ++:
+                position ++;
             }
-        
         }
+        int[] evens = new int [position];
+
+        return evens;
     }
+}
     
 
