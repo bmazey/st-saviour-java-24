@@ -20,14 +20,18 @@ public class Arrayer {
         }
         //create array of correct size
         int[] result = new int[count];
+        // starts at the first item in position
         int position = 0;
+        // for loop goes through each item and tests if it is even by seeing if it is divisible by 2
         for (int i = 0; i < input.length; i++) {
             if(input[i] % 2 == 0) {
+                // if it is even it adds the number to the array
                 result [position] = input[i];
+                // increases the position to make room for the next number
                 position++;
             }
         }
-
+        // returns the new array
         return result;
 
     }
@@ -42,11 +46,14 @@ public class Arrayer {
     public static int[] lastOfFourDigits(int[] input) {
 
         int[] result = new int[input.length];
+        // creates a new array that is the same length as the old one
         for (int i = 0; i < input.length; i++) {
             result[i] = input[i] % 10;
+            //takes the remainder of each number after it is divided by 10 and adds it to the new
+            // array in the same position it was in in the old array
         }
 
-
+        // returns the new array
         return result;
     }
 
@@ -58,15 +65,16 @@ public class Arrayer {
      */
     public static int[] roundUp(double[] input) {
         // TODO implement roundUp()
-        for (double i = 0; i < input.length; i++){
+        int[] result = new int[input.length];
+        for (int i = 0; i < input.length; i++){
             if(input[i] % 1 >= 0.5){
-                input[i] ++;
+                result[i] = (int)input[i] + 1;
+            }
+            else{
+                result[i]=(int)input[i];
             }
         }
-
-
-
-        return new int[0];
+        return result;
     }
 
     /*
