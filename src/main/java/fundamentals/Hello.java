@@ -68,10 +68,9 @@ public class Hello {
     }
     int [] myArray = new int[4]; //create array
     //int [] myArray = new int[4,3,2,1]; // array specified
-    System.out.prinln ("array length " + myArray.length);
-    System.out.println("first item: " + myArray[0]);
-    System.out.println("last item: " + myArray9myArray.length -1);
-    for (int i = 0; i < myArray.length; i++){
+    //System.out.prinln ("array length " + myArray.length);
+    //System.out.println("first item: " + myArray[0]);
+    //System.out.println("last item: " + myArray9myArray.length -1);
+    //for (int i = 0; i < myArray.length; i++){
 
     }
-}

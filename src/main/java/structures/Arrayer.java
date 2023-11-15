@@ -12,7 +12,7 @@ public class Arrayer {
      * ex: [3, 7, 12, 4, 13, 0] -> [12, 4, 0]
      */
     public static int[] evensOnly(int[] input) {
-        int count = 0;//keeps track of amount of even numbers
+        int count = 0; //keeps track of amount of even numbers
         for (int i = 0; i < input.length; i++){
             if(input [i] % 2 == 0){
                 count++;
@@ -43,23 +43,16 @@ public class Arrayer {
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
      */
     public static int[] lastOfFourDigits(int[] input) {
-        int count = 0;
-        for (int i = 0; i < input.length; i++) {
-            //int [] result = new int[count];
-            count++;
+
+        int [] result = new int [input.length]; //new array created to be the length of the original array
+        for (int i = 0; i < input.length; i++) { //loop created to keep track of positions
+            result [i] = input [i] % 10; //for i % 10, the remainder will be stored which happens to be the final digit
+            
         }
-        int [] result = new int[input.length];
-        for (int i = 0; i <input.length; i++){
-             count = result.charAt (4); //???
+        return result; //returns final digit of array's numbers
         }
         
-        return result;
-    }
-        
-        
-        
-        
-    
+
 
     /*
      * roundUp() takes an array of doubles as input, and returns a new array of rounded
@@ -68,8 +61,17 @@ public class Arrayer {
      * ex: [1.2, 3.6, 7.9, 4.1] -> [1, 4, 8, 4]
      */
     public static int[] roundUp(double[] input) {
-        // TODO implement roundUp()
-        return new int[0];
+        
+        int [] result = new int [input.length]; //creates new array, becomes int to remove decimals
+        for (int i = 0; i < input.length; i++){ //keeps track of positions
+            if (input [i] % 1 >= 0.5){ 
+                result [i] = (int) input [i] + 1;//if i >= .5 it will round up 
+            }
+            else {
+                result [i] = (int) input [i]; //if i < .5 it will round down
+            }
+        }
+        return result; //returns rounded numbers
     }
 
     /*
@@ -79,27 +81,29 @@ public class Arrayer {
      * 
      * ex: [0, 4, -2, 17] -> 2 
      */
-    public static int findNegative(int[] input) {
-       for (int i = 0; i < input.length; i++){
+    public static int findNegative(int[] input) { 
+       for (int i = 0; i < input.length; i++){ //loop created to keep track of positions
             if (input [i] < 0) {
-                //number is negative
+                //if the number is negative, it will return the number's position
                 return i;
         }
        }
-        return -1;
+        return -1; //if all numbers are positive it will return -1 since there are no positions with a negative number
         }
         
     public static int everyOther(int[] input){
         //accepts an array of ints and returns a new array containing only numbers in even positions
-        int position = 0;
-        for (int i = 0; i <input.length; i++){
+        int [] position = new int [input.length];
+        int evens = 0;
+        for (int i = 0; i < input.length; i++){
             if (i % 2 == 0){
-                position ++;
+            //even numbers should be added into array and returned                
+                //evens ++;
             }
         }
-        int[] evens = new int [position];
+        
 
-        return evens;
+        return position;
     }
 }
     
