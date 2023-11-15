@@ -13,6 +13,7 @@ public class Arrayer {
         // TODO implement evensOnly()
         //this variable keeps count of amount of even numbers
         int count = 0;
+        //for loop that goes through each item in input
         for(int i = 0; i<input.length; i++){
            //check to see if number is even
             if(input[i] % 2 == 0){
@@ -22,14 +23,19 @@ public class Arrayer {
         }
         //creates an array of the correct size
         int[] result = new int[count];
+        //starts at the first item in position
         int position = 0;
+        //creates a for loop that goes through each item in input again
         for(int i = 0; i< input.length; i++){
-            if(i%2 == 0){
+          //checks to see if the item is diviible by 2
+            if(input[i] %2 == 0){
+               //adds the number to the array "result"
                 result[position] = input[i];
                 position++;
             }
         }
 
+        //returns the new array
         return result;
     }
 
@@ -41,11 +47,15 @@ public class Arrayer {
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
      */
     public static int[] lastOfFourDigits(int[] input) {
-       int[] result = new int[input.length];
+      //creates an array called result that is equal to the length of input
+        int[] result = new int[input.length];
         // TODO implement lastOfFourDigits()
+        //a for loop that goes through each position in input
         for(int i = 0; i<input.length; i++){
+            //finds the last number and adds it to result
             result[i] = input[i]%10;
         }
+        //returns the array result
         return result;
     }
 
@@ -57,13 +67,24 @@ public class Arrayer {
      */
     public static int[] roundUp(double[] input) {
         // TODO implement roundUp()
+        //creates a new array called result that has the same length as input
+        int[] result = new int[input.length];
+        //iterates through each item in input
         for(int i = 0; i<input.length; i++){
+           //checks to see if the value at input i has a decimal greater or equal to 0.5
             if(input[i]%1 >= 0.5){
-                input[i] ++ ;
-                return input
+               //changes the type to an int and adds one
+                result[i] = (int)input[i]+ 1;
+            }
+            else{
+               //if less than 0.5 this changes the type to an int
+                result[i] = (int)input[i];
+
             }
         }
-        return new int[0];
+        
+        //returns the result array
+        return result;
     }
 
     /*
@@ -75,12 +96,15 @@ public class Arrayer {
      */
     public static int findNegative(int[] input) {
         // TODO implement findNegative()
-       for(int i = 0; i< input.length; i++){
+      //iterates through each item in input
+        for(int i = 0; i< input.length; i++){
+          //tests the number to see if it is less than 0
             if(input[i]<0){
             //the number is negative
               return i;
              }
         }
+        //if the if statement is not passed return -1
         return -1;
     }
     
