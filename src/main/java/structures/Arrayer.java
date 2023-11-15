@@ -22,12 +22,12 @@ public class Arrayer {
         int[] result = new int[count];
         int position = 0;
         for (int i = 0; i < input.length; i ++){
-            if(input [i] % 2 ==0) {
+            if(input[i] % 2 == 0) {
                 result[position] = input[i];
-                position ++;
+                position++;
             }
         }
-        return new int[0]; 
+        return result; 
     }
 
     /*
@@ -42,7 +42,7 @@ public class Arrayer {
             // the result string will be the same length of the original string because we're simply editing the original string 
             for (int i = 0; i < input.length; i++) {
                 // Use mod to get the last three digits
-                result[i] = input[i] % 1000;
+                result[i] = input[i] % 10;
             }
         
             return result;
@@ -55,9 +55,22 @@ public class Arrayer {
      * ex: [1.2, 3.6, 7.9, 4.1] -> [1, 4, 8, 4]
      */
     public static int[] roundUp(double[] input) {
-        // TODO implement roundUp()
-        return new int[0];
+        //set int array equal to the length of the double array 
+        int[] result = new int[input.length];
+
+        for (int i = 0; i < input.length; i++) {
+            // Round up if the decimal part is >= 0.5
+            result[i] = (int) input[i];
+            if (input[i] % 1 >= 0.5) {
+                result[i]++;
+            }
+        }
+
+        return result;
     }
+
+// mod 1 to get remainder oex 2.5 remainder is .5 if .5 is less than or greater round up whater 
+// a = inta +1
 
     /*
      * findNegative() returns the position of the first occurence of a negative 
@@ -79,21 +92,4 @@ public class Arrayer {
     
 }
 
-//public static int[] everyother(int[] input)
-//create a methof "everyother" which accepts an array (list) of ints and returns a 
-//new array containing only the og numbers with even positions 
 
-// to create a new array: int[] myArray = new int[4];
-// this is how you make a new array of 4 items 
-// int[] myArray = new int[]{4, 4, 3, 1};
-// this still has 4 items but this defines what the items are 
-
-//System.out.println("array length: " + myArray.length).
-// That is how to print the length of an array 
-// print the item in first position : System.out.println("array length: " + myArray[0])
-// defalut value of every item in list is 0 !!!
-// System.out.println("array length: " + myArray[myArray.length - 1])
-// this prints the last number of any length array 
-
-//print every item in array: for(int i = 0; i < myArray.length; i++){
-//
