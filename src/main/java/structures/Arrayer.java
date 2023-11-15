@@ -57,10 +57,22 @@ public class Arrayer {
      */
     public static int[] roundUp(double[] input) {
         //create array
-        int
-        return new int[0];
-    }
+        int[] result = new int[input.length];
+        // create loop
+        for(int i = 0; i < input.length; i++){
+            // mod 1 to get decimal
+            if (input [i] % 1 >= 0.5){
+                result[i] = (int) input [i] + 1;
+                // else statement incase number is less than 0.5
+            }
+            else{
+                // return array
+                result[i]= (int) input [i];
 
+            }
+        } 
+        return result; 
+    }
     /*
      * findNegative() returns the position of the first occurence of a negative 
      * integer in the input array. findNegative() should return -1 if all
@@ -78,5 +90,5 @@ public class Arrayer {
         // there were no negative integers in input[]
         return -1;
     }
-    
 }
+
