@@ -64,16 +64,23 @@ public class Arrayer {
      * ex: [1.2, 3.6, 7.9, 4.1] -> [1, 4, 8, 4]
      */
     public static int[] roundUp(double[] input) {
-        // TODO implement roundUp()
+        // creates a new array that is the same length as the original array
         int[] result = new int[input.length];
         for (int i = 0; i < input.length; i++){
+            //by doing mod 1 to the first element in the list, it sepparates the decimal from that number
+            //then the if statement checks if the decimal is greater than 0.5
             if(input[i] % 1 >= 0.5){
+                //if the statement is true the number is converted to an integer which takes off the decimal 
+                // and is increased by 1 because it is being rounded up
                 result[i] = (int)input[i] + 1;
             }
             else{
+                //if the if statement wasnt true, and the decimal point was less than 0.5, the number
+                //is still converted to an integer and then is left because the number has been rounded down
+                //then it is added to the new array
                 result[i]=(int)input[i];
             }
-        }
+        }//returns the new array
         return result;
     }
 
@@ -85,12 +92,15 @@ public class Arrayer {
      * ex: [0, 4, -2, 17] -> 2 
      */
     public static int findNegative(int[] input) {
-        // TODO implement findNegative()
         for (int i = 0; i < input.length; i++) {
+            //the for loop goes through each value in the array and the if statement tests if that value
+            // if less than 0 and therefore negative
             if(input[i] < 0) {
+            // if the number if is negative, the position of that number is returned
             return i;
+
             }
-        }
+        }//if none of the numbers are negative, -1 is returned to show there is no position with a negative number
         return -1;
     }
         
