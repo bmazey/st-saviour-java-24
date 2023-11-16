@@ -22,12 +22,13 @@ public class Movie {
 
     // constructor method for Movie - notice the use of keyword "this" below
     public Movie() {
-        this.Patrons = new ArrayList<String>();
+        this.Patrons = new ArrayList<String>(); //will need this. for all codes
     }
 
     // enqueue() adds a patron to the Patrons queue
     public void enqueue(String patron) {
         // TODO implement enqueue()
+        this.Patrons.add(patron);
     }
 
     // dequeue() removes a patron from the Patrons queue
@@ -35,6 +36,7 @@ public class Movie {
     // dequeue from an empty Patrons queue
     public String dequeue() {
         // TODO implement dequeue()
+        this.Patrons.dequeue(Patrons);
         return "";
     }
 
