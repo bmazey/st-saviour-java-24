@@ -23,10 +23,12 @@ public class Movie {
     // constructor method for Movie - notice the use of keyword "this" below
     public Movie() {
         this.Patrons = new ArrayList<String>();
+        Movie FiveNightsAtFreddys = new Movie();
     }
 
     // enqueue() adds a patron to the Patrons queue
     public void enqueue(String patron) {
+        this.Patrons.add(front(patron));
         // TODO implement enqueue()
     }
 
