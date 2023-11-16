@@ -46,12 +46,15 @@ public class Arrayer {
      */
     public static int[] lastOfFourDigits(int[] input) {
         // TODO implement lastOfFourDigits()
+        // input result is equal to the length of the input
         int[] result = new int[input.length];
+        // create loop
         for(int i = 0; i < input.length; i++){
-            result [i] = (input [i]) % 10;
+            //result at the current position = input at the current position
+            result[i] = (input[i]) % 10;
         }
         
-        return new int[0];
+        return result;
     }
 
     /*
@@ -62,6 +65,8 @@ public class Arrayer {
      */
     public static int[] roundUp(double[] input) {
         // TODO implement roundUp()
+        
+
         return new int[0];
     }
 
