@@ -36,13 +36,13 @@ public class Movie {
     // dequeue from an empty Patrons queue
     public String dequeue() {
         // TODO implement dequeue()
-        this.Patrons.dequeue(Patrons);
+        this.Patrons.remove (patron);
         return "";
     }
 
     // first() reads the first item in the Patrons queue and returns the name
     public String first() {
-        // TODO implement first()
+        this.Patrons.
         return "";
     }
 
