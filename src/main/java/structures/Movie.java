@@ -36,19 +36,20 @@ public class Movie {
     // dequeue from an empty Patrons queue
     public String dequeue() {
         // TODO implement dequeue()
-        this.Patrons.remove (patron);
+        this.Patrons.shift();
         return "";
     }
 
     // first() reads the first item in the Patrons queue and returns the name
     public String first() {
-        this.Patrons.
+        this.Patrons.log(patron[0]);
         return "";
     }
 
     // last() reads the last item in the Patrons queue and returns the name
     public String last() {
         // TODO implement last()
+        this.Patrons.log(patron[]);//??
         return "";
     }
 
