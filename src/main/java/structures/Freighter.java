@@ -65,7 +65,7 @@ public class Freighter {
     // isEmpty() returns true if Containers is empty, and false if otherwise
     // TODO implement isEmpty()
     public boolean isEmpty() {
-        if (this.Containers.size == 0){
+        if (this.Containers.size() == 0){
             return true;
         }
         else{
