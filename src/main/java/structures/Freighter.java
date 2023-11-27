@@ -50,6 +50,7 @@ public class Freighter {
 
     // isEmpty() returns true if Containers is empty, and false if otherwise
     public boolean isEmpty() {
+        
         // TODO implement isEmpty()
         return true;
     }
