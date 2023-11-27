@@ -26,8 +26,7 @@ public class Movie {
     }
 
     // enqueue() adds a patron to the Patrons queue
-    public void enqueue(String patron) {
-        // TODO implement enqueue()
+    public void enqueue (String patron) {
         // calls the private list Patrons and adds patron to it
         this.Patrons.add(patron);
         
@@ -37,14 +36,13 @@ public class Movie {
     // dequeue() should return an empty String instead of an error if you try to
     // dequeue from an empty Patrons queue
     public String dequeue() {
-        // TODO implement dequeue()
         //tests to see if the queue is empty, returns an empty string if it is
-        if(this.Patrons.isEmpty()){
+        if (this.Patrons.isEmpty()) {
             return "";
         }
         //otherwise sets the first item to a variable called num1, removes it from the 
         //queue and then returns the variable num1
-        else{
+        else {
             String num1 = this.Patrons.get(0);
             this.Patrons.remove(0);
             return num1;
@@ -53,7 +51,6 @@ public class Movie {
 
     // first() reads the first item in the Patrons queue and returns the name
     public String first() {
-        // TODO implement first()
        // creates a variable first and stores the first item in Patrons, it returns first
         String first = this.Patrons.get(0);
         return first;
@@ -61,7 +58,6 @@ public class Movie {
 
     // last() reads the last item in the Patrons queue and returns the name
     public String last() {
-        // TODO implement last()
         //creates a variable called last that stores the last item in Patrons, it returns last
         String last = this.Patrons.get(this.Patrons.size()-1);
         return last;
@@ -69,13 +65,12 @@ public class Movie {
 
     // isEmpty() should return true if the Patrons queue is empty and false otherwise 
     public boolean isEmpty() {
-        // TODO implement isEmpty()
        //checks if the queue is empty and returns true if it is
-        if(this.Patrons.size() == 0){
+        if (this.Patrons.size() == 0) {
             return true;
         }
         //if the queue is not empty it returns false
-        else{
+        else {
             return false;
         }
     }
