@@ -16,46 +16,51 @@ import java.util.List;
  * 
  */
 public class Movie {
-
-    // the list of all patrons
+    //the list of all patrons
     private List<String> Patrons;
 
-    // constructor method for Movie - notice the use of keyword "this" below
+    //set Patrons list as an Array List
     public Movie() {
         this.Patrons = new ArrayList<String>();
-        Movie FiveNightsAtFreddys = new Movie();
-    }
-
-    // enqueue() adds a patron to the Patrons queue
-    public void enqueue(String patron) {
-        this.Patrons.add(front(patron));
-        // TODO implement enqueue()
-    }
-
-    // dequeue() removes a patron from the Patrons queue
-    // dequeue() should return an empty String instead of an error if you try to
-    // dequeue from an empty Patrons queue
-    public String dequeue() {
-        // TODO implement dequeue()
-        return "";
-    }
-
-    // first() reads the first item in the Patrons queue and returns the name
-    public String first() {
-        // TODO implement first()
-        return "";
-    }
-
-    // last() reads the last item in the Patrons queue and returns the name
-    public String last() {
-        // TODO implement last()
-        return "";
-    }
-
-    // isEmpty() should return true if the Patrons queue is empty and false otherwise 
-    public boolean isEmpty() {
-        // TODO implement isEmpty()
-        return true;
     }
     
+    // Enque to add a patron to the end of the queue
+    public void enqueue(String patron) {
+        this.Patrons.add(patron);
+    }
+
+    //Dequeu removes a atron and returns an empty string if your try to dequeu from empty Patrons
+    public String dequeue() {
+        //Check if the queu is empty
+        if (!this.Patrons.isEmpty()) {
+        // remove and return the first patron
+            return this.Patrons.remove(0);
+        } else {
+            return "";
+        }
+    }
+    // Read the first item in the Patrons queue and return the name
+    public String first() {
+        if (!this.Patrons.isEmpty()) {
+            return this.Patrons.get(0);
+        } else {
+        // Return an empty string if queue is empty
+            return "";
+        }
+    }
+
+    // LAst reads the last item and returns the name
+    public String last() {
+        if (!this.Patrons.isEmpty()) {
+            return this.Patrons.get(this.Patrons.size() - 1);
+        } else {
+        // Return emty string if queue is empty
+            return "";
+        }
+    }
+
+    // IsEmpty returns true if the queue is empty and false if not 
+    public boolean isEmpty() {
+        return this.Patrons.isEmpty();
+    }
 }
