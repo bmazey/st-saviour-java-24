@@ -26,6 +26,7 @@ public class Freighter {
     // push() adds an item to the Containers list; pay close attention to the order!
     public void push(String item) {
         // TODO implement push()
+        //calls the private list 'Containers' and adds item to it
         this.Containers.add(item);
     }
 
@@ -34,9 +35,13 @@ public class Freighter {
     // item off an empty Containers stack
     public String pop() {
         // TODO implement pop()
+        //tests the list to see if it is empty, if it is it returns an empty string
         if(this.Containers.isEmpty()){
             return "";
         }
+        // if the list is not empty it creates a variable 'last' that 
+        //contains the last item in Containers, it removes the last item and then
+        //returns last
         else{
             String last = this.Containers.get(this.Containers.size()-1);
             this.Containers.remove(this.Containers.size()-1);
@@ -47,6 +52,7 @@ public class Freighter {
     // top() reads the next item to be unloaded from Containers
     public String top() {
         // TODO implement top()
+        //creates a variable 'top' that contains the last item in the list and returns it
         String top = this.Containers.get(this.Containers.size()-1);
         return top;
     }
@@ -54,6 +60,7 @@ public class Freighter {
     // bottom() reads the final item to be unloaded from Containers
     public String bottom() {
         // TODO implement bottom()
+        //creates a variable 'bottom' that contains the first item in Containers and returns it
         String bottom = this.Containers.get(0);
         return bottom;
     }
@@ -61,6 +68,8 @@ public class Freighter {
     // isEmpty() returns true if Containers is empty, and false if otherwise
     public boolean isEmpty() {
         // TODO implement isEmpty()
+        //tests to see if the Containers list is empty
+        //if it is it returns true if not it returns false
         if(this.Containers.size()== 0){
             return true;
         }
