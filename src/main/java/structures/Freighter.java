@@ -25,7 +25,7 @@ public class Freighter {
 
     // push() adds an item to the Containers list; pay close attention to the order!
     public void push (String item) {
-        //calls the private list 'Containers' and adds item to it
+        // calls the private list 'Containers' and adds item to it
         this.Containers.add(item);
     }
 
@@ -33,43 +33,38 @@ public class Freighter {
     // pop() should return an empty String instead of an error if you try to pop an
     // item off an empty Containers stack
     public String pop() {
-        //tests the list to see if it is empty, if it is it returns an empty string
+        // tests the list to see if it is empty, if it is it returns an empty string
         if (this.Containers.isEmpty()) {
             return "";
         }
         // if the list is not empty it creates a variable 'last' that 
-        //contains the last item in Containers, it removes the last item and then
-        //returns last
+        // contains the last item in Containers, it removes the last item and then
+        // returns last
         else {
             String last = this.Containers.get(this.Containers.size()-1);
             this.Containers.remove(this.Containers.size()-1);
             return last;
         }
     }
-
     // top() reads the next item to be unloaded from Containers
     public String top() {
-        //creates a variable 'top' that contains the last item in the list and returns it
+        // creates a variable 'top' that contains the last item in the list and returns it
         String top = this.Containers.get(this.Containers.size()-1);
         return top;
     }
-
     // bottom() reads the final item to be unloaded from Containers
     public String bottom() {
-        //creates a variable 'bottom' that contains the first item in Containers and returns it
+        // creates a variable 'bottom' that contains the first item in Containers and returns it
         String bottom = this.Containers.get(0);
         return bottom;
     }
-
     // isEmpty() returns true if Containers is empty, and false if otherwise
     public boolean isEmpty() {
-
-        //tests to see if the Containers list is empty
-        //if it is empty it returns true, if not it returns false
+        // tests to see if the Containers list is empty
+        // if it is empty it returns true, if not it returns false
         if (this.Containers.size()== 0) {
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }
