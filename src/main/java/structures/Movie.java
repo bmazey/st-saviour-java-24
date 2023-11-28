@@ -36,30 +36,30 @@ public class Movie {
     // dequeue from an empty Patrons queue
     public String dequeue() {
         String patron = this.Patrons.remove(0);
-        if (patron == 0){
+        if (patron == 0) {
           return "";  
-        }  //if statement array = nothing return ""
+        }  // if statement array = nothing return ""
         
     }
 
     // first() reads the first item in the Patrons queue and returns the name
     public String first() {
-        int fdigits = this.Patrons.indexOf(Patrons);
+        int fitem = this.Patrons.indexOf(Patrons);
         return "";
     }
 
     // last() reads the last item in the Patrons queue and returns the name
     public String last() {
         // TODO implement last()
-        int ldigits = this.Patrons.lastIndexOf(Patrons);
-        if (ldigits != -1){
+        int litem = this.Patrons.lastIndexOf(Patrons);
+        if (litem != -1) {
             return Patrons;
         }
     }
 
     // isEmpty() should return true if the Patrons queue is empty and false otherwise 
     public boolean isEmpty(){ 
-        return this.Patrons.isEmpty(); //using the isEmpty command, a true value should return if the queue has a length value of 0
+        return this.Patrons.isEmpty();  // a true value should return if the queue has a length value of 0
     }
     
 }

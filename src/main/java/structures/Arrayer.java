@@ -12,23 +12,23 @@ public class Arrayer {
      * ex: [3, 7, 12, 4, 13, 0] -> [12, 4, 0]
      */
     public static int[] evensOnly(int[] input) {
-        int count = 0; //keeps track of amount of even numbers
-        for (int i = 0; i < input.length; i++){
-            if(input [i] % 2 == 0){
+        int count = 0;  // keeps track of amount of even numbers
+        for (int i = 0; i < input.length; i++) {
+            if (input [i] % 2 == 0) {
                 count++;
             }
         }
-        //create an array of the correct size
+        // create an array of the correct size
         int [] result = new int [count];
         int position = 0;
-        //go over input array again
+        // go over input array again
         for (int i = 0; i < input.length; i++) {
             if (input [i] % 2 == 0) {
-                //check if current number is even
+                // check if current number is even
                 result [position] = input[i];
-                //add even number to result array
+                // add even number to result array
                 position ++;
-                //incrememnt position for the result array
+                // incrememnt position for the result array
             }
         }
 
@@ -44,12 +44,11 @@ public class Arrayer {
      */
     public static int[] lastOfFourDigits(int[] input) {
 
-        int [] result = new int [input.length]; //new array created to be the length of the original array
-        for (int i = 0; i < input.length; i++) { //loop created to keep track of positions
-            result [i] = input [i] % 10; //for i % 10, the remainder will be stored which happens to be the final digit
-            
+        int [] result = new int [input.length]; // new array created to be the length of the original array
+        for (int i = 0; i < input.length; i++) {    // loop created to keep track of positions
+            result [i] = input [i] % 10;    // for i % 10, the remainder will be stored which happens to be the final digit
         }
-        return result; //returns final digit of array's numbers
+        return result;  // returns final digit of array's numbers
         }
         
 
@@ -62,16 +61,16 @@ public class Arrayer {
      */
     public static int[] roundUp(double[] input) {
         
-        int [] result = new int [input.length]; //creates new array, becomes int to remove decimals
-        for (int i = 0; i < input.length; i++){ //keeps track of positions
-            if (input [i] % 1 >= 0.5){ 
-                result [i] = (int) input [i] + 1;//if i >= .5 it will round up 
+        int [] result = new int [input.length]; // creates new array, becomes int to remove decimals
+        for (int i = 0; i < input.length; i++){ // keeps track of positions
+            if (input [i] % 1 >= 0.5) { 
+                result [i] = (int) input [i] + 1;   // if i >= .5 it will round up 
             }
             else {
-                result [i] = (int) input [i]; //if i < .5 it will round down
+                result [i] = (int) input [i];   // if i < .5 it will round down
             }
         }
-        return result; //returns rounded numbers
+        return result; // returns rounded numbers
     }
 
     /*
@@ -82,13 +81,13 @@ public class Arrayer {
      * ex: [0, 4, -2, 17] -> 2 
      */
     public static int findNegative(int[] input) { 
-       for (int i = 0; i < input.length; i++){ //loop created to keep track of positions
+       for (int i = 0; i < input.length; i++){ // loop created to keep track of positions
             if (input [i] < 0) {
-                //if the number is negative, it will return the number's position
+                // if the number is negative, it will return the number's position
                 return i;
         }
        }
-        return -1; //if all numbers are positive it will return -1 since there are no positions with a negative number
+        return -1;  // if all numbers are positive it will return -1 since there are no positions with a negative number
         }
         
     public static int everyOther(int[] input){
@@ -96,7 +95,7 @@ public class Arrayer {
         int [] position = new int [input.length];
         int evens = 0;
         for (int i = 0; i < input.length; i++){
-            if (i % 2 == 0){
+            if (i % 2 == 0) {
             //even numbers should be added into array and returned                
                 //evens ++;
             }
