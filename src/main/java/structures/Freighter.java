@@ -25,8 +25,7 @@ public class Freighter {
 
     // push() adds an item to the Containers list; pay close attention to the order!
     public void push(String item) {
-        //this.Containers
-        // TODO implement push()
+        this.Containers.add(item);
     }
 
     // pop() removes an item from the Containers list; pay close attention to the order!
@@ -52,7 +51,6 @@ public class Freighter {
     // isEmpty() returns true if Containers is empty, and false if otherwise
     public boolean isEmpty() {
         this.Containers = new ArrayList<String>();
-        // TODO implement isEmpty()
-        return true;
+        return this.Containers.isEmpty();
     }
 }
