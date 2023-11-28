@@ -36,7 +36,8 @@ public class Movie {
     // dequeue from an empty Patrons queue
     public String dequeue() {
         // TODO implement dequeue()
-        this.Patrons.shift();
+        String patron = this.Patrons.remove(0);
+        if (patron = 0);//if statement array = nothing return ""
         return "";
     }
 
@@ -54,9 +55,8 @@ public class Movie {
     }
 
     // isEmpty() should return true if the Patrons queue is empty and false otherwise 
-    public boolean isEmpty() {
-        // TODO implement isEmpty()
-        return true;
+    public boolean isEmpty() 
+        return this.Patrons.isEmpty(); //using the isEmpty command, a true value should return if the queue has a length value of 0
     }
     
 }
