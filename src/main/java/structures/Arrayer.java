@@ -38,15 +38,15 @@ public class Arrayer {
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
      */
     public static int[] lastOfFourDigits(int[] input) {
-            int[] result = new int[input.length];
-            // the result string will be the same length of the original string because we're simply editing the original string 
-            for (int i = 0; i < input.length; i++) {
-                // Use mod to get the last three digits
-                result[i] = input[i] % 10;
-            }
-        
-            return result;
+        int[] result = new int[input.length];
+        // the result string will be the same length of the original string because we're simply editing the original string 
+        for (int i = 0; i < input.length; i++) {
+            // Use mod to get the last three digits
+            result[i] = input[i] % 10;
         }
+        
+        return result;
+    }
 
     /*
      * roundUp() takes an array of doubles as input, and returns a new array of rounded
@@ -68,9 +68,6 @@ public class Arrayer {
 
         return result;
     }
-
-// mod 1 to get remainder oex 2.5 remainder is .5 if .5 is less than or greater round up whater 
-// a = inta +1
 
     /*
      * findNegative() returns the position of the first occurence of a negative 

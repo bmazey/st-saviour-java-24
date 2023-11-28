@@ -16,10 +16,10 @@ import java.util.List;
  * 
  */
 public class Movie {
-    //the list of all patrons
+    // the list of all patrons
     private List<String> Patrons;
 
-    //set Patrons list as an Array List
+    // set Patrons list as an Array List
     public Movie() {
         this.Patrons = new ArrayList<String>();
     }
@@ -29,7 +29,7 @@ public class Movie {
         this.Patrons.add(patron);
     }
 
-    //Dequeu removes a atron and returns an empty string if your try to dequeu from empty Patrons
+    // Dequeu removes a atron and returns an empty string if your try to dequeu from empty Patrons
     public String dequeue() {
         //Check if the queu is empty
         if (!this.Patrons.isEmpty()) {
@@ -49,7 +49,7 @@ public class Movie {
         }
     }
 
-    // LAst reads the last item and returns the name
+    // Last reads the last item and returns the name
     public String last() {
         if (!this.Patrons.isEmpty()) {
             return this.Patrons.get(this.Patrons.size() - 1);
