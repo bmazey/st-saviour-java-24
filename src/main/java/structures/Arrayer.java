@@ -9,6 +9,8 @@ public class Arrayer {
      * 
      * ex: [3, 7, 12, 4, 13, 0] -> [12, 4, 0]
      */
+    private static int round;
+
     public static int[] evensOnly(int[] input) {
         // TODO implement evensOnly() 
         int count = 0; 
@@ -35,9 +37,13 @@ public class Arrayer {
      * 
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
      */
+    /**
+     * @param input
+     * @return
+     */
     public static int lastOfFourDigits(int[] input) {
         // TODO implement lastOfFourDigits()
-        int[]result = new int(input.lengt);
+        final int[]result = new int(input.lengt);
         for(int i = 0; i < input.length; i++){{
             result [i] = input [i] % 1000;
         }
@@ -50,10 +56,19 @@ public class Arrayer {
      * 
      * ex: [1.2, 3.6, 7.9, 4.1] -> [1, 4, 8, 4]
      */
+    /**
+     * @param input
+     * @return
+     */
     public static int[] roundUp(double[] input) {
         // TODO implement roundUp()
-        return new int[0];
+        for(int i = 0; i < input.length; i++)
+            round = Math.round ([i]+1);
+          
+        system.out.println(input.length(round));
     }
+
+
 
     /*
      * findNegative() returns the position of the first occurence of a negative 
@@ -63,14 +78,13 @@ public class Arrayer {
      * ex: [0, 4, -2, 17] -> 2 
      */
     public static int findNegative(int[] input) {
-        for(int i = 0; i < input.length; i++){
+        for(int i = 0; i < input.length;){
+            //for loop to establish the array and positions within in.
             if(input[i] < 0) {
+                //any number less than 0 is considered negative 
             return i;
         }
-            return -1;
-        }
-        return 0;
-
+    
         
     }
     
