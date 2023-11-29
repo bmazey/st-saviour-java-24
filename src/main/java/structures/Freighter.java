@@ -33,19 +33,28 @@ public class Freighter {
     // item off an empty Containers stack
     public String pop() {
         // TODO implement pop()
-        return "";
+        
+        if (Containers.isEmpty()){
+            return null;
+        }
+        String remove = this.Containers.remove(this.Containers.size() -1);
+        this.Containers.remove(this.Containers.size() - 1);
+        return remove;
     }
 
     // top() reads the next item to be unloaded from Containers
     public String top() {
         // TODO implement top()
-        return "";
+        String first = this.Containers.get(0);
+        return first;
     }
 
     // bottom() reads the final item to be unloaded from Containers
     public String bottom() {
         // TODO implement bottom()
-        return "";
+        String last = this.Containers.get(this.Containers.size() - 1);
+        Containers.remove (Containers.size() - 1);
+        return last;
     }
 
     // isEmpty() returns true if Containers is empty, and false if otherwise
