@@ -23,54 +23,47 @@ public class Freighter {
         this.Containers = new ArrayList<String>();
     }
 
-    // push() adds an item to the Containers list; pay close attention to the order!
+    // push() adds an item to the Containers list
     public void push(String item) {
-        // TODO implement push()
-        //calls the list containers and adds an item to it
+        // calls the list containers and adds an item to it
         this.Containers.add(item);
     }
 
-    // pop() removes an item from the Containers list; pay close attention to the order!
-    // pop() should return an empty String instead of an error if you try to pop an
-    // item off an empty Containers stack
+    // pop() removes an item from the Containers list
     public String pop() {
-        // TODO implement pop()
-        if (this.Containers.isEmpty()){
+        // tests to see if the queue is empty and if it is, returns an empty string
+        if (this.Containers.isEmpty()) {
             return "";
-            // tests to see if the queue is empty and if it is, returns an empty string
-        }
-        else{
+        } else {
+            // gets the last item of the list and assigns it to last
             String last = this.Containers.get(this.Containers.size()-1);
+            // removes the last item from the list
             this.Containers.remove(this.Containers.size()-1);
+            // returns the last item
             return last;
         }
-        // says that if the queue is not empty, the last item is removed and returned
     }
     // top() reads the next item to be unloaded from Containers
     public String top() {
-        // TODO implement top()
+        // takes the last item to be added to the list and returns it
         String top = this.Containers.get(this.Containers.size()-1);
         return top;
-        // takes the last item to be added to the list and reads it
     }
-
     // bottom() reads the final item to be unloaded from Containers
     public String bottom() {
-        // TODO implement bottom()
+        // takes the first item that was added to containers and returns it
         String bottom = this.Containers.get(0);
         return bottom;
-        // takes the first item to be added to containers and reads it
     }
-
     // isEmpty() returns true if Containers is empty, and false if otherwise
-    // TODO implement isEmpty()
     public boolean isEmpty() {
-        if (this.Containers.size() == 0){
+        // says that if the length of the list is 0 return true
+        if (this.Containers.size() == 0) {
             return true;
         }
-        else{
+        // says that if the length is not 0, return false
+        else {
             return false;
-        }
-        
+        } 
     }
 }
