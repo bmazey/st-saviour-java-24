@@ -14,21 +14,17 @@ import java.util.List;
  * in Java.
  */
 public class Freighter {
-
     // the list of all containers
     private List<String> Containers;
-
     // constructor method for Freighter - notice the use of keyword "this"
     public Freighter() {
         this.Containers = new ArrayList<String>();
     }
-
     // push() adds an item to the Containers list; pay close attention to the order!
     public void push (String item) {
         // calls the private list 'Containers' and adds item to it
         this.Containers.add(item);
     }
-
     // pop() removes an item from the Containers list; pay close attention to the order!
     // pop() should return an empty String instead of an error if you try to pop an
     // item off an empty Containers stack

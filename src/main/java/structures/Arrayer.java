@@ -14,7 +14,7 @@ public class Arrayer {
         int count = 0;
         // for loop that goes through each item in input
         for (int i = 0; i<input.length; i++) {
-             // check to see if number is even
+            // check to see if number is even
             if (input[i] % 2 == 0) {
                // number is even, add to count
                 count++;
@@ -33,11 +33,9 @@ public class Arrayer {
                 position++;
             }
         }
-
         // returns the new array
         return result;
     }
-
     /*
      * lastOfFourDigits() takes an int array which ONLY contains four digit 
      * numbers [1000 - 9999]. The method returns a new array which contains the last three digits 
@@ -56,7 +54,6 @@ public class Arrayer {
         // returns the array result
         return result;
     }
-
     /*
      * roundUp() takes an array of doubles as input, and returns a new array of rounded
      * integers. As a general rule, we only round up when the decimal is >= 5.
@@ -75,14 +72,11 @@ public class Arrayer {
             } else {
                // if less than 0.5 this changes the type to an int
                 result[i] = (int)input[i];
-
             }
         }
-        
         // returns the result array
         return result;
     }
-
     /*
      * findNegative() returns the position of the first occurence of a negative 
      * integer in the input array. findNegative() should return -1 if all
@@ -102,5 +96,4 @@ public class Arrayer {
         // if the if statement is not passed return -1
         return -1;
     }
-    
 }
