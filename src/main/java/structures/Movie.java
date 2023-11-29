@@ -37,7 +37,7 @@ public class Movie {
     public String dequeue() {
         String patron = this.Patrons.remove(0);
         if (isEmpty()) {
-          return "";  
+          return null;  
         }  // if statement array = nothing return ""
         
     }

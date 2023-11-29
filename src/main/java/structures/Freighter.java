@@ -33,12 +33,11 @@ public class Freighter {
     // item off an empty Containers stack
     public String pop() {
         // TODO implement pop()
-        
-        if (Containers.isEmpty()){
+        if (this.Containers.isEmpty()){
             return null;
         }
-        String remove = this.Containers.remove(this.Containers.size() -1);
-        this.Containers.remove(this.Containers.size() - 1);
+        String remove = this.Containers.remove(Containers.size() -1);
+        this.Containers.remove(Containers.size() - 1);
         return remove;
     }
 
