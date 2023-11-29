@@ -26,6 +26,7 @@ public class Freighter {
     // push() adds an item to the Containers list; pay close attention to the order!
     public void push(String item) {
         this.Containers.add(item);
+        
     }
 
     // pop() removes an item from the Containers list; pay close attention to the order!
@@ -34,31 +35,30 @@ public class Freighter {
     public String pop() {
         // TODO implement pop()
         if (this.Containers.isEmpty()){
-            return null;
+            return "";
         }
-        String remove = this.Containers.remove(Containers.size() -1);
-        this.Containers.remove(Containers.size() - 1);
+        String remove = this.Containers.remove(this.Containers.size() - 1);
         return remove;
     }
 
     // top() reads the next item to be unloaded from Containers
     public String top() {
         // TODO implement top()
-        String first = this.Containers.get(0);
-        return first;
+        String last = this.Containers.get(this.Containers.size() - 1);
+        return last;
     }
 
     // bottom() reads the final item to be unloaded from Containers
     public String bottom() {
         // TODO implement bottom()
-        String last = this.Containers.get(this.Containers.size() - 1);
-        Containers.remove (Containers.size() - 1);
-        return last;
+        String first = this.Containers.get(0);
+        //Containers.remove (Containers.size() - 1);
+        return first;
     }
 
     // isEmpty() returns true if Containers is empty, and false if otherwise
     public boolean isEmpty() {
-        this.Containers = new ArrayList<String>();
+       // this.Containers = new ArrayList<String>();
         return this.Containers.isEmpty();
     }
 }

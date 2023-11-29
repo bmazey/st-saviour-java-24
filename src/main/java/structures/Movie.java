@@ -35,11 +35,12 @@ public class Movie {
     // dequeue() should return an empty String instead of an error if you try to
     // dequeue from an empty Patrons queue
     public String dequeue() {
-        String patron = this.Patrons.remove(0);
-        if (isEmpty()) {
-          return null;  
-        }  // if statement array = nothing return ""
         
+        if (this.Patrons.isEmpty()) {
+          return "";  
+        }  // if statement array = nothing return ""
+        String patron = this.Patrons.remove(0);
+        return patron;
     }
 
     // first() reads the first item in the Patrons queue and returns the name
