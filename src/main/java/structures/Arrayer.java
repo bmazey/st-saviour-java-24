@@ -10,7 +10,6 @@ public class Arrayer {
      * ex: [3, 7, 12, 4, 13, 0] -> [12, 4, 0]
      */
     public static int[] evensOnly(int[] input) {
-        // TODO implement evensOnly() 
         int count = 0;
 
         // count the number of even numbers in the input array
@@ -42,13 +41,12 @@ public class Arrayer {
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
      */
     public static int[] lastOfFourDigits(int[] input) {
-        // TODO implement lastOfFourDigits()
         int[] result = new int[input.length];
 
         for (int i = 0; i < input.length; i++) {
             result[i] = (input[i]) % 10;
         }
-        
+
         return result;
     }
 
@@ -59,7 +57,6 @@ public class Arrayer {
      * ex: [1.2, 3.6, 7.9, 4.1] -> [1, 4, 8, 4]
      */
     public static int[] roundUp(double[] input) {
-        // TODO implement roundUp()
         int[] result = new int[input.length];  
 
         for (int i = 0; i < input.length; i++) {
@@ -83,7 +80,6 @@ public class Arrayer {
      * ex: [0, 4, -2, 17] -> 2 
      */
     public static int findNegative(int[] input) {
-         // TODO implement findNegative()
         for(int i = 0; i < input.length; i++) {
             if (input[i] < 0) {
                 return i;

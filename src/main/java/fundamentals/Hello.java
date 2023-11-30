@@ -72,7 +72,7 @@ public class Hello {
         int[] myArray = new int[4];
         // print length of the array
         System.out.println("array length: " + myArray.length);
-        System.out.println()
+        System.out.println();
         for(int i = 0; i < myArray.length; i++){
 
         }

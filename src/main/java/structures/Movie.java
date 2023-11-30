@@ -27,33 +27,35 @@ public class Movie {
 
     // enqueue() adds a patron to the Patrons queue
     public void enqueue(String patron) {
-        // TODO implement enqueue()
+        this.Patrons.add(patron);
     }
 
     // dequeue() removes a patron from the Patrons queue
     // dequeue() should return an empty String instead of an error if you try to
     // dequeue from an empty Patrons queue
     public String dequeue() {
-        // TODO implement dequeue()
-        return "";
+        if (isEmpty()) {
+            return "";
+        } else {
+            String num1 = this.Patrons.get(0);
+            this.Patrons.remove(0);
+            return num1;
+        }
     }
 
     // first() reads the first item in the Patrons queue and returns the name
     public String first() {
-        // TODO implement first()
-        return "";
+        String item = this.Patrons.get(0);
+        return item;
     }
 
     // last() reads the last item in the Patrons queue and returns the name
     public String last() {
-        // TODO implement last()
-        return "";
+        return this.Patrons.get(this.Patrons.size() - 1);
     }
 
     // isEmpty() should return true if the Patrons queue is empty and false otherwise 
     public boolean isEmpty() {
-        // TODO implement isEmpty()
-        return true;
+        return this.Patrons.isEmpty();
     }
-    
 }
