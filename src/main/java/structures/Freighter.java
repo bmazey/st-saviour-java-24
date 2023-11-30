@@ -24,33 +24,39 @@ public class Freighter {
     }
 
     // push() adds an item to the Containers list; pay close attention to the order!
-    public void push(String item) {
+    public String push(String item) {
         // TODO implement push()
-    }
+        this.Containers.add(item);
+        return item;
+        }
 
     // pop() removes an item from the Containers list; pay close attention to the order!
     // pop() should return an empty String instead of an error if you try to pop an
     // item off an empty Containers stack
     public String pop() {
         // TODO implement pop()
-        return "";
+        if (isEmpty()){
+            return "";  // return empty string for empty Containers stack
+        } else {
+            return this.Containers.remove(this.Containers.size() - 1);
+        }
     }
-
+    
     // top() reads the next item to be unloaded from Containers
     public String top() {
         // TODO implement top()
-        return "";
+        return this.Containers.get(this.Containers.size() - 1);
     }
 
     // bottom() reads the final item to be unloaded from Containers
     public String bottom() {
         // TODO implement bottom()
-        return "";
+        return this.Containers.get(0); // retrieve the item at position 0
     }
 
     // isEmpty() returns true if Containers is empty, and false if otherwise
     public boolean isEmpty() {
         // TODO implement isEmpty()
-        return true;
+        return this.Containers.isEmpty();
     }
 }

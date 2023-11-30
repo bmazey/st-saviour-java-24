@@ -65,7 +65,18 @@ public class Arrayer {
      */
     public static int[] roundUp(double[] input) {
         // TODO implement roundUp()
-        
+        //create an array
+        int[]result= new int[input.length];     
+        for(int i = 0; i < input.length; i++){
+            if(input[i]%1 >= 0.5){
+                result[i] = (int)input[i] + 1;
+            }
+
+            else{
+                result[i]=(int)input[i];
+            }
+            return result;
+        }
 
         return new int[0];
     }
