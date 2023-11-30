@@ -25,40 +25,48 @@ public class Freighter {
 
     // push() adds an item to the Containers list; pay close attention to the order!
     public void push(String item) {
+
         this.Containers.add(item);
-        
+        // any item pushed will be added into the stack  
     }
 
     // pop() removes an item from the Containers list; pay close attention to the order!
     // pop() should return an empty String instead of an error if you try to pop an
     // item off an empty Containers stack
     public String pop() {
-        // TODO implement pop()
+
         if (this.Containers.isEmpty()){
             return "";
+        // if Containers is empty or has no items it will return an empty string
         }
         String remove = this.Containers.remove(this.Containers.size() - 1);
+        // variable created to remove first item in Container according to the size of the stick
         return remove;
+        // name of removed string returned
     }
 
     // top() reads the next item to be unloaded from Containers
     public String top() {
-        // TODO implement top()
+
         String last = this.Containers.get(this.Containers.size() - 1);
+        // new variable created to show the next item to be removed
         return last;
+        // name of next item returned
     }
 
     // bottom() reads the final item to be unloaded from Containers
     public String bottom() {
-        // TODO implement bottom()
+
         String first = this.Containers.get(0);
-        //Containers.remove (Containers.size() - 1);
+        // new variable created to show final item to be removed. will have been the first item to be loaded
         return first;
+        // return name of final item
     }
 
     // isEmpty() returns true if Containers is empty, and false if otherwise
     public boolean isEmpty() {
-       // this.Containers = new ArrayList<String>();
+
         return this.Containers.isEmpty();
+        // since isEmpty is a boolean if the Container is empty it will return true
     }
 }

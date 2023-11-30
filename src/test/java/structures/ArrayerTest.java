@@ -78,4 +78,9 @@ public class ArrayerTest {
 
         assertEquals(3, result);
     }
+
+    @Test
+    public void testEveryOther() {
+        int [] test = {}
+    }
 }
