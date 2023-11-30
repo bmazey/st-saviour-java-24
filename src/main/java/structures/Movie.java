@@ -18,7 +18,7 @@ import java.util.List;
 public class Movie {
 
     // the list of all patrons
-    private List<String> Patrons;
+    private ArrayList<String> Patrons;
 
     // constructor method for Movie - notice the use of keyword "this" below
     public Movie() {
@@ -27,29 +27,47 @@ public class Movie {
 
     // enqueue() adds a patron to the Patrons queue
     public void enqueue(String patron) {
-        
+        this.Patrons.add(patron); 
     }
 
     // dequeue() removes a patron from the Patrons queue
     // dequeue() should return an empty String instead of an error if you try to
     // dequeue from an empty Patrons queue
-    public String dequeue() {
-        return "";
+    public String dequeue(){
+        // check to see if queue is empty
+        if (this.Patrons.isEmpty()) {
+        // return empty string if queue is empty
+            return ""; 
+        }
+        // remove the first patron on line
+        String name = this.Patrons.remove(0);
+        // return name of the first patron
+        return name; 
     }
 
     // first() reads the first item in the Patrons queue
     public String first() {
-        return "";
+        // get the first patron in queue
+        String firstitem = this.Patrons.get(0);
+        return firstitem;
     }
 
     // last() reads the last item in the Patrons queue
     public String last() {
-        return "";
+        // get the position of the last patron in queue
+       String lastitem = this.Patrons.get(this.Patrons.size() - 1); 
+       return lastitem;
     }
 
     // isEmpty() should return true if the Patrons queue is empty and false otherwise 
     public boolean isEmpty() {
-        return true;
+        // create a variable with patron's size
+        int length = this.Patrons.size();
+        if (length == 0) {
+        // if length is 0 return true
+            return true;
+        }
+        return false; 
     }
     
 }
