@@ -90,20 +90,26 @@ public class Arrayer {
         return -1;  // if all numbers are positive it will return -1 since there are no positions with a negative number
         }
         
-    //public static int everyOther(int[] input){
+    public static int everyOther(int[] input){
         //accepts an array of ints and returns a new array containing only numbers in even positions
-      //  int [] position = new int [input.length];
-      //  int evens = 0;
-     //   for (int i = 0; i < input.length; i++){
-     //       if (i % 2 == 0) {
+        int [] position = new int [input.length];
+        int evens = 0;
+        for (int i = 0; i < input.length; i++){
+            if (i % 2 == 0) {
             //even numbers should be added into array and returned                
-                //evens ++;
-       //     }
-     //   }
-        
+                evens ++;
+            }
+        }
+        int other = 0;
+        for (int i = 0; i < input.length; i++){
+            if (i % 2 == 0){
+                other++;
+                position [evens] = input [i];                
+            }
+        }
 
-        //return position;
- //   }
+        return other;
+    }
 }
     
 
