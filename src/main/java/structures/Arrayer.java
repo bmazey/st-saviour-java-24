@@ -29,11 +29,12 @@ public class Arrayer {
      * 
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
      */
+
+    // establishing a for loop to evalute the input and determine the remainder which is the last digits
     public static int[] lastOfFourDigits(int[] input) {
-        // TODO implement lastOfFourDigits()
-         int[] result = new int[input.length];
-        for(int i = 0; i < input.length; i++) {
-            result[i] = input[i] % 10;
+        int[] result = new int[input.length];
+            for(int i = 0; i < input.length; i++) {
+                result[i] = input[i] % 10;
         }
         return result;
     }
@@ -44,14 +45,13 @@ public class Arrayer {
      * 
      * ex: [1.2, 3.6, 7.9, 4.1] -> [1, 4, 8, 4]
      */
+// setting up an if statment that declares if the value mod by 1 is greater tahn or equal to 0.5 the vaule should be rounded up
     public static int[] roundUp(double[] input) {
-    // TODO implement roundUp()
     int[] result = new int [input.length];
-        
     for (int i = 0; i < input.length; i++) {
         result[i] = (int) input[i];
-        if (input[i] % 1 >= 0.5) {
-            result[i]++;
+            if (input[i] % 1 >= 0.5) {
+                result[i]++;
             }
         }
             return result;
@@ -64,11 +64,10 @@ public class Arrayer {
      * 
      * ex: [0, 4, -2, 17] -> 2 
      */
+    // for loop used to establish the array + positions and if statment that declares any number less than 0 is negative and should be returned 
     public static int findNegative(int[] input) {
         for(int i = 0; i < input.length; i++) {
-        //for loop to establish the array and positions within in.
-        if(input[i] < 0) {
-        //any number less than 0 is considered negative 
+            if(input[i] < 0) {
         return i;
         }
         }
