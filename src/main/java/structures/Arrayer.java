@@ -21,8 +21,7 @@ public class Arrayer {
                 //number is even, increment count by 1 
                 count++;
             }
-        }
-        
+        } 
         // create an array of the correct size
         int[] result = new int [count];
         int position = 0;
@@ -35,10 +34,7 @@ public class Arrayer {
         }
         //now after the system picks out all the even numbers it creates a new array with those even numbers 
         return result;
-  
     }
-        
-
     /*
      * lastOfFourDigits() takes an int array which ONLY contains four digit 
      * numbers [1000 - 9999]. The method returns a new array which contains the last three digits 
@@ -57,7 +53,6 @@ public class Arrayer {
 // now the system returns a new array with all the digits it received after doing mod
         return result;
     }
-
     /*
      * roundUp() takes an array of doubles as input, and returns a new array of rounded
      * integers. As a general rule, we only round up when the decimal is >= 5.
@@ -82,8 +77,7 @@ public class Arrayer {
         // Return the new array with the round up or same integer 
         return result;
     }
-
-    /*
+     /*
      * findNegative() returns the position of the first occurence of a negative 
      * integer in the input array. findNegative() should return -1 if all
      * integers in the provided array are positive.
