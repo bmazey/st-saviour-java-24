@@ -9,7 +9,7 @@ public class FreighterTest {
     @Test
     public void testFreighterStack() {
         // create a new Freighter Stack
-        Freighter SSAnne = new Freighter ();
+        Freighter SSAnne = new Freighter();
 
         // add an item to the Containers stack
         SSAnne.push("Pokeball");

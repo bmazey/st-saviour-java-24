@@ -15,7 +15,9 @@ import java.util.List;
  * use key word "this" to access Patrons in your method implementations.
  * 
  */
-    public class Movie {
+
+public class Movie {
+
     // the list of all patrons
     private List<String> Patrons;
 
@@ -33,11 +35,10 @@ import java.util.List;
     // dequeue() should return an empty String instead of an error if you try to
     // dequeue from an empty Patrons queue
     public String dequeue() {
-        if (!this.Patrons. isEmpty()) {
+        if (!this.Patrons.isEmpty()) {
             return this.Patrons.remove(0);
         }
-        return "";
-        
+        return "";   
     }
 
     // first() reads the first item in the Patrons queue and returns the name
@@ -47,13 +48,11 @@ import java.util.List;
         } else {
             return ""; 
         }
-         
     }
 
     // last() reads the last item in the Patrons queue and returns the name
     public String last() {
-        // TODO implement last()
-          
+        // TODO implement last()          
         if (!this.Patrons.isEmpty()) {
             return this.Patrons.get(this.Patrons.size() - 1);
         } else {
@@ -64,7 +63,6 @@ import java.util.List;
     // isEmpty() should return true if the Patrons queue is empty and false otherwise 
     public boolean isEmpty() {
         // TODO implement isEmpty()
-
         return this.Patrons.isEmpty();
     }
     

@@ -16,12 +16,13 @@ import java.util.List;
 public class Freighter {
 
     // the list of all containers
-     List<String> Containers;{}
+    private List<String> Containers;
 
     // constructor method for Freighter - notice the use of keyword "this"
     public Freighter() {
         this.Containers = new ArrayList<String>();
     }
+
     // push() adds an item to the Containers list; pay close attention to the order!
     public void push(String item) {
         Containers.add(item);
@@ -36,7 +37,7 @@ public class Freighter {
     // Return an empty string if trying to pop from an empty stack
         }
         int lastIndex = Containers.size() - 1;
-        return Containers.remove(lastIndex); 
+        return Containers.remove(lastIndex);
     }
 
     // top() reads the next item to be unloaded from Containers
