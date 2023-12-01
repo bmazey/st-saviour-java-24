@@ -34,7 +34,7 @@ public class Freighter {
     // item off an empty Containers stack
     public String pop() {
         if (this.Containers.isEmpty()) {
-            return "";
+        return "";
         }
         // create variable to remove top container on stack
         String last = this.Containers.remove(this.Containers.size() - 1);
