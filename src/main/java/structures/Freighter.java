@@ -38,7 +38,7 @@ public class Freighter {
         }
         // create variable to remove top container on stack
         String last = this.Containers.remove(this.Containers.size() - 1);
-		    return last;
+		return last;
     }
 
     // top() reads the next item to be unloaded from Containers
