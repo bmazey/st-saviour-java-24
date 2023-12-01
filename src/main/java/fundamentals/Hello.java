@@ -34,8 +34,8 @@ public class Hello {
         // https://en.wikipedia.org/wiki/Pentium_FDIV_bug
 
         // testing equality
-        String pandas = "pandas";
-        String saviour = "pandas";
+        // String pandas = "pandas";
+        // String saviour = "pandas";
 
         // interned by the compiler
         // if (saviour == pandas) {
@@ -65,5 +65,16 @@ public class Hello {
         // if ("pandas" == "pan" + "das") {
         //     System.out.println("pandas is equal to concat string pan + das");
         // }
+
+        // create an array of size 4
+        // 0 is the default value of any array you create
+        // [0, 0, 0, 0] 
+        int[] myArray = new int[4];
+        // print length of the array
+        System.out.println("array length: " + myArray.length);
+        System.out.println();
+        for(int i = 0; i < myArray.length; i++){
+
+        }
     }
 }

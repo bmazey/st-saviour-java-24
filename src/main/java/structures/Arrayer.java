@@ -10,7 +10,27 @@ public class Arrayer {
      * ex: [3, 7, 12, 4, 13, 0] -> [12, 4, 0]
      */
     public static int[] evensOnly(int[] input) {
-        return new int[0];
+        int count = 0;
+
+        // count the number of even numbers in the input array
+        for (int i = 0; i < input.length; i++) {
+            if (input[i] % 2 == 0) {
+                count++;
+            }
+        }
+
+        // create an array of the correct size
+        int[] result = new int[count];
+        int position = 0;
+
+        for (int i = 0; i < input.length; i++) {
+            if (input[i] % 2 == 0) {
+                result[position] = input[i];
+                position++;
+            }
+        }
+        
+        return result;
     }
 
     /*
@@ -21,7 +41,14 @@ public class Arrayer {
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
      */
     public static int[] lastOfFourDigits(int[] input) {
-        return new int[0];
+        // comment
+        int[] result = new int[input.length];
+
+        for (int i = 0; i < input.length; i++) {
+            result[i] = (input[i]) % 10;
+        }
+
+        return result;
     }
 
     /*
@@ -31,7 +58,19 @@ public class Arrayer {
      * ex: [1.2, 3.6, 7.9, 4.1] -> [1, 4, 8, 4]
      */
     public static int[] roundUp(double[] input) {
-        return new int[0];
+        int[] result = new int[input.length];  
+
+        for (int i = 0; i < input.length; i++) {
+            double decimal = input[i] - (int) input[i]; // take out the decimal
+
+            if (decimal >= 0.5) {
+                result[i] = (int) input[i] + 1; // round up
+            } else {
+                result[i] = (int) input[i]; // don't round up
+            }
+        }
+
+        return result;
     }
 
     /*
@@ -42,7 +81,12 @@ public class Arrayer {
      * ex: [0, 4, -2, 17] -> 2 
      */
     public static int findNegative(int[] input) {
-        return 0;
+        for(int i = 0; i < input.length; i++) {
+            if (input[i] < 0) {
+                return i;
+            } 
+        }
+
+        return -1;
     }
-    
 }
