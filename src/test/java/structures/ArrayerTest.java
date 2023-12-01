@@ -78,4 +78,15 @@ public class ArrayerTest {
 
         assertEquals(3, result);
     }
+
+    @Test
+    public void testEveryOther() {
+        int[] test = {3, 25, 4, 8, 19 , 66};
+        int[] result = Arrayer.everyOther(test);
+
+        assertEquals(3, result[0]);
+        assertEquals(4, result[2]);
+        assertEquals(19, result[4]);
+
+    }
 }
