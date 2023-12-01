@@ -10,7 +10,7 @@ public class FizzBuzzTest {
         assertEquals("fizz", FizzBuzz.fizzBuzz(231));
         // TODO - add more test cases ...
     }
-
+            
     @Test
     public void testMultipleOfFive() {
         assertEquals("buzz", FizzBuzz.fizzBuzz(440));

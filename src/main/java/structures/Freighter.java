@@ -15,42 +15,44 @@ import java.util.List;
  */
 public class Freighter {
 
-    // the list of all containers
+    // identifying containers as a list 
     private List<String> Containers;
 
-    // constructor method for Freighter - notice the use of keyword "this"
+    // "this." attaches array to list
     public Freighter() {
         this.Containers = new ArrayList<String>();
     }
-
-    // push() adds an item to the Containers list; pay close attention to the order!
+    // adding an item to the Containers list
     public void push(String item) {
-        // TODO implement push()
+        Containers.add(item);
     }
-
-    // pop() removes an item from the Containers list; pay close attention to the order!
-    // pop() should return an empty String instead of an error if you try to pop an
-    // item off an empty Containers stack
+    // creating the condition to return an empty string if you are removing from an empty stack
     public String pop() {
-        // TODO implement pop()
-        return "";
+        if (isEmpty()) {
+            return "";  
+        }
+        int lastIndex = Containers.size() - 1;
+        return Containers.remove(lastIndex);
     }
 
-    // top() reads the next item to be unloaded from Containers
+    // evaluting the next item in the list containers 
     public String top() {
-        // TODO implement top()
-        return "";
+        if (isEmpty()) {
+            return ""; 
+        }
+        return Containers.get(Containers.size() - 1);
     }
 
-    // bottom() reads the final item to be unloaded from Containers
+    // evaluating the final item to be removed from Containers and return and empty string if empty 
     public String bottom() {
-        // TODO implement bottom()
-        return "";
+        if (isEmpty()) {
+            return ""; 
+        }
+        return Containers.get(0);
     }
 
-    // isEmpty() returns true if Containers is empty, and false if otherwise
+    // Setting up a true or false condition that prints true if empty and false if not
     public boolean isEmpty() {
-        // TODO implement isEmpty()
-        return true;
+        return this.Containers.isEmpty();
     }
 }

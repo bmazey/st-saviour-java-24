@@ -15,45 +15,50 @@ import java.util.List;
  * use key word "this" to access Patrons in your method implementations.
  * 
  */
+
 public class Movie {
 
-    // the list of all patrons
+    // setting up the lists for patrons 
     private List<String> Patrons;
 
-    // constructor method for Movie - notice the use of keyword "this" below
+    // connecting the list Patrons to the array using this.
     public Movie() {
         this.Patrons = new ArrayList<String>();
     }
 
-    // enqueue() adds a patron to the Patrons queue
+    // Using enqueue() to add a patron to the next position 
     public void enqueue(String patron) {
-        // TODO implement enqueue()
+        this.Patrons.add(patron);
     }
 
-    // dequeue() removes a patron from the Patrons queue
-    // dequeue() should return an empty String instead of an error if you try to
-    // dequeue from an empty Patrons queue
+    // Using dequeue () to remove from the next postion and return an empty string if postion already empty 
     public String dequeue() {
-        // TODO implement dequeue()
-        return "";
+        if (!this.Patrons.isEmpty()) {
+            return this.Patrons.remove(0);
+        }
+        return "";   
     }
 
-    // first() reads the first item in the Patrons queue and returns the name
-    public String first() {
-        // TODO implement first()
-        return "";
+    // declaring that if the list isn't empty then the first postion should be returned 
+    public String first() {    
+        if (!this.Patrons.isEmpty()) {
+            return this.Patrons.get(0);
+        } else {
+            return ""; 
+        }
     }
-
-    // last() reads the last item in the Patrons queue and returns the name
-    public String last() {
-        // TODO implement last()
-        return "";
+    //declarng that if the list isn't empty then the last postion should be returned 
+    public String last() {         
+        if (!this.Patrons.isEmpty()) {
+            return this.Patrons.get(this.Patrons.size() - 1);
+        }
+        else {
+            return "";
+        }
     }
-
-    // isEmpty() should return true if the Patrons queue is empty and false otherwise 
+    // creating a true or false condition that will return true if the Patrons is empty and false if not 
     public boolean isEmpty() {
-        // TODO implement isEmpty()
-        return true;
+        return this.Patrons.isEmpty();
     }
     
 }

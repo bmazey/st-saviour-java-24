@@ -2,16 +2,24 @@ package structures;
 
 // documentation: https://www.baeldung.com/java-arrays-guide
 public class Arrayer {
-    /*
-     * evensOnly() takes an int array and returns a new array which contains
-     * only even numbers found within the original array, preserving the original 
-     * order.
-     * 
-     * ex: [3, 7, 12, 4, 13, 0] -> [12, 4, 0]
-     */
+  
     public static int[] evensOnly(int[] input) {
-        // TODO implement evensOnly()
-        return new int[0];
+    // TODO implement evensOnly() 
+        int count = 0; 
+        for(int i = 0; i < input.length; i++){
+            if(input [i] % 2 == 0 ){
+                count++;
+            }
+        }
+        int[] result = new int [count];
+        int position = 0;
+        for(int i=0; i < input.length; i++)
+            if(input[i] % 2 == 0 ){
+                result[position] = input[i];
+                position++;
+
+            }
+        return result;
     }
 
     /*
@@ -21,9 +29,14 @@ public class Arrayer {
      * 
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
      */
+
+    // establishing a for loop to evalute the input and determine the remainder which is the last digits
     public static int[] lastOfFourDigits(int[] input) {
-        // TODO implement lastOfFourDigits()
-        return new int[0];
+        int[] result = new int[input.length];
+            for(int i = 0; i < input.length; i++) {
+                result[i] = input[i] % 10;
+        }
+        return result;
     }
 
     /*
@@ -32,9 +45,16 @@ public class Arrayer {
      * 
      * ex: [1.2, 3.6, 7.9, 4.1] -> [1, 4, 8, 4]
      */
+// setting up an if statment that declares if the value mod by 1 is greater tahn or equal to 0.5 the vaule should be rounded up
     public static int[] roundUp(double[] input) {
-        // TODO implement roundUp()
-        return new int[0];
+    int[] result = new int [input.length];
+    for (int i = 0; i < input.length; i++) {
+        result[i] = (int) input[i];
+            if (input[i] % 1 >= 0.5) {
+                result[i]++;
+            }
+        }
+            return result;
     }
 
     /*
@@ -44,9 +64,14 @@ public class Arrayer {
      * 
      * ex: [0, 4, -2, 17] -> 2 
      */
+    // for loop used to establish the array + positions and if statment that declares any number less than 0 is negative and should be returned 
     public static int findNegative(int[] input) {
-        // TODO implement findNegative()
-        return 0;
+        for(int i = 0; i < input.length; i++) {
+            if(input[i] < 0) {
+        return i;
+        }
+        }
+    return -1;
     }
     
 }
