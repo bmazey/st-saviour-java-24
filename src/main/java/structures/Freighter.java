@@ -13,41 +13,45 @@ import java.util.List;
  * Science. In this exercise we'll be implementing a simple Stack using ArrayList
  * in Java.
  */
+
 public class Freighter {
 
-    // the list of all containers
     private List<String> Containers;
 
-    // constructor method for Freighter - notice the use of keyword "this"
     public Freighter() {
         this.Containers = new ArrayList<String>();
     }
-
-    // push() adds an item to the Containers list; pay close attention to the order!
+    // Add an item to the container stack
     public void push(String item) {
-        
+        Containers.add(item);
     }
-
-    // pop() removes an item from the Containers list; pay close attention to the order!
-    // pop() should return an empty String instead of an error if you try to pop an
-    // item off an empty Containers stack
+    // Remove and return the last item added to the container stack
     public String pop() {
-        return "";
+        if (isEmpty()) {
+            return ""; 
+    // Return an empty string if trying to pop from an empty stack
+        }
+        int lastIndex = Containers.size() - 1;
+        return Containers.remove(lastIndex);
     }
-
-    // top() reads the next item to be unloaded from Containers
+    // Return the last item added to the container stack without removing it
     public String top() {
-        return "";
+        if (isEmpty()) {
+            return ""; 
+    // Return an empty string if the stack is empty
+        }
+        return Containers.get(Containers.size() - 1);
     }
-
-    // bottom() reads the final item to be unloaded from Containers
+    // Return the first item added to the container stack
     public String bottom() {
-        return "";
+        if (isEmpty()) {
+            return ""; 
+    // Return an empty string if the stack is empty
+        }
+        return Containers.get(0);
     }
 
-    // isEmpty() returns true if Containers is empty, and flase if otherwise
     public boolean isEmpty() {
-        return true;
+        return Containers.isEmpty();
     }
-
 }
