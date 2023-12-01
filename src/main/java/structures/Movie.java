@@ -45,12 +45,12 @@ public class Movie {
         }
     }
     // first() reads the first item in the Patrons queue and returns the name
-    public String first() {
+    public String first() { //return the first patron
         String item = this.Patrons.get(0);
         return item; 
     }
     // last() reads the last item in the Patrons queue and returns the name
-    public String last() {
+    public String last() { //return the last patron
         return this.Patrons.get(this.Patrons.size() - 1 );
     }
     // isEmpty() should return true if the Patrons queue is empty and false otherwise 
