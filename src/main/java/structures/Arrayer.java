@@ -29,7 +29,7 @@ public class Arrayer {
                 position++;
             }
         }
-
+        
         return result;
     }
 
