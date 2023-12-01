@@ -69,6 +69,7 @@ public class Arrayer {
         return result;
     }
 
+
     /*
      * findNegative() returns the position of the first occurence of a negative 
      * integer in the input array. findNegative() should return -1 if all
@@ -77,7 +78,7 @@ public class Arrayer {
      * ex: [0, 4, -2, 17] -> 2 
      */
     public static int findNegative(int[] input) {
-       for(int i=0; i < input.length; i++){
+       for(int i = 0; i < input.length; i++){
         if(input[i] < 0) {
         // the number is negative
         return i;
