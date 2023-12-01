@@ -41,6 +41,7 @@ public class Arrayer {
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
      */
     public static int[] lastOfFourDigits(int[] input) {
+        // comment
         int[] result = new int[input.length];
 
         for (int i = 0; i < input.length; i++) {
