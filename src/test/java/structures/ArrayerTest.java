@@ -81,12 +81,12 @@ public class ArrayerTest {
 
     @Test
     public void testEveryOther() {
-        int [] test = {3, 25, 4, 8, 19 , 66};
-        int result = Arrayer.everyOther(test);
+        int[] test = {3, 25, 4, 8, 19 , 66};
+        int[] result = Arrayer.everyOther(test);
 
-        assertEquals(expected: 3, result [0]);
-        assertEquals(expected: 4, result [2]);
-        assertEquals(expected: 19, result [4]);
+        assertEquals(3, result[0]);
+        assertEquals(4, result[2]);
+        assertEquals(19, result[4]);
 
     }
 }

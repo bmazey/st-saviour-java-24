@@ -1,7 +1,5 @@
 package structures;
 
-import android.webkit.JsResult;
-
 // documentation: https://www.baeldung.com/java-arrays-guide
 public class Arrayer {
     /*
@@ -104,27 +102,25 @@ public class Arrayer {
         return -1;
         // if all numbers are positive it will return -1 since there are no positions with a negative number
         }
-        
-    public static int everyOther(int[] input){
 
-        //accepts an array of ints and returns a new array containing only numbers in even positions
-        int [] position = new int [input.length];
+     // accepts an array of ints and returns a new array containing only numbers in even positions   
+    public static int[] everyOther(int[] input){
+        
         int evens = 0;
         for (int i = 0; i < input.length; i++){
-            if (i % 2 == 0) {
-            //even numbers should be added into array and returned                
+        // for loop to keep track of array length
+            if (input [i] % 2 == 0) {
+            // even numbers should be added into array and returned                
                 evens ++;
-            }
-        }
-        int other = 0;
-        for (int i = 0; i < input.length; i++){
-            if (i % 2 == 0){
-                other++;
-                position [evens] = input [i];                
+            // evens counts position of even numbers
             }
         }
 
-        return other;
+        int[] result = new int[evens];
+        // new array for even numbers
+
+        return result;
+        // returns even number array
     }
 }
     
