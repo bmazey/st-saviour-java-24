@@ -14,29 +14,6 @@ public class Password {
      */
 
     public static String generatePassword() {
-<<<<<<< HEAD
-        // TODO - implement generatePassword() ...
-        String letters = "abcdefghijklmnopqrstuvwxyz";
-        String digits = "0123456789";
-        String symbols = "!@#$%^&*";
-
-        StringBuilder password = new StringBuilder();
-        Random random = new Random();
-        for(int i = 0; i < 5; i++) {
-            password.append(letters.charAt(random.nextInt(letters.length())));
-        }
-
-        for (int i = 0; i < 4 ; i++) {
-            //int index = ;
-            password.append(digits.charAt(random.nextInt(digits.length())));
-        }
-
-        int symbolIndex = random.nextInt(symbols.length());
-        password.append(symbols.charAt(symbolIndex));
-
-        return password.toString();
-  
-=======
         String password = "";
 
         // create random number generator
@@ -61,7 +38,6 @@ public class Password {
         password += symbols.charAt(random.nextInt(symbols.length()));
 
         return password;
->>>>>>> d45f76c0e167894edabe5dc290ecf0665ae10dd2
     }
    
 }

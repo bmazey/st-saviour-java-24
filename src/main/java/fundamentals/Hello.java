@@ -5,10 +5,6 @@ public class Hello {
         // this space is provided for experimentation purposes
         // System.out.println("new dawn, new day");
 
-<<<<<<< HEAD
-        String result = FizzBuzz.fizzBuzz(30);
-        System.out.println("result: " + result);
-=======
         // discussion on errors
         // Java is strongly typed - what does that mean?
         // documentation: https://www.baeldung.com/java-primitives
@@ -69,6 +65,5 @@ public class Hello {
         // if ("pandas" == "pan" + "das") {
         //     System.out.println("pandas is equal to concat string pan + das");
         // }
->>>>>>> d45f76c0e167894edabe5dc290ecf0665ae10dd2
     }
 }

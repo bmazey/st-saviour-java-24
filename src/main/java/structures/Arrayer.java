@@ -2,24 +2,19 @@ package structures;
 
 // documentation: https://www.baeldung.com/java-arrays-guide
 public class Arrayer {
-    /*
-     * evensOnly() takes an int array and returns a new array which contains
-     * only even numbers found within the original array, preserving the original 
-     * order.
-     * 
-     * ex: [3, 7, 12, 4, 13, 0] -> [12, 4, 0]
+    /**
+     * @param input
+     * @return
      */
-    private static int round;
-
     public static int[] evensOnly(int[] input) {
-        // TODO implement evensOnly() 
+    // TODO implement evensOnly() 
         int count = 0; 
         for(int i = 0; i < input.length; i++){
             if(input [i] % 2 == 0 ){
                 count++;
             }
         }
-        int[] result = new int [count]
+        int[] result = new int [count];
         int position = 0;
         for(int i=0; i < input.length; i++)
             if(input[i] % 2 == 0 ){
@@ -41,11 +36,11 @@ public class Arrayer {
      * @param input
      * @return
      */
-    public static int lastOfFourDigits(int[] input) {
+    public static int[] lastOfFourDigits(int[] input) {
         // TODO implement lastOfFourDigits()
-        final int[]result = new int(input.lengt);
-        for(int i = 0; i < input.length; i++){{
-            result [i] = input [i] % 1000;
+         int[] result = new int[input.length];
+        for(int i = 0; i < input.length; i++) {
+            result[i] = input[i] % 1000;
         }
         return result;
     }
@@ -61,31 +56,34 @@ public class Arrayer {
      * @return
      */
     public static int[] roundUp(double[] input) {
-        // TODO implement roundUp()
-        for(int i = 0; i < input.length; i++)
-            round = Math.round ([i]+1);
-          
-        system.out.println(input.length(round));
+    // TODO implement roundUp()
+    int[] result = new int [input.length];
+        
+    for (int i = 0; i < input.length; i++) {
+        result[i] = (int) input[i];
+        if (input[i] % 1 >= 0.5) {
+            result[i]++;
+            }
+        }
+            return result;
     }
-
-
 
     /*
      * findNegative() returns the position of the first occurence of a negative 
      * integer in the input array. findNegative() should return -1 if all
-     * integers in the provided array are positive.
+     * integers in the provided array are p ositive.
      * 
      * ex: [0, 4, -2, 17] -> 2 
      */
     public static int findNegative(int[] input) {
-        for(int i = 0; i < input.length;){
-            //for loop to establish the array and positions within in.
-            if(input[i] < 0) {
-                //any number less than 0 is considered negative 
-            return i;
+        for(int i = 0; i < input.length; i++) {
+//for loop to establish the array and positions within in.
+        if(input[i] < 0) {
+    //any number less than 0 is considered negative 
+        return i;
         }
-    
-        
+        }
+    return -1;
     }
     
 }

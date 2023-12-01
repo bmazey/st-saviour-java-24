@@ -16,7 +16,7 @@ import java.util.List;
 public class Freighter {
 
     // the list of all containers
-    private List<String> Containers;
+     List<String> Containers;{}
 
     // constructor method for Freighter - notice the use of keyword "this"
     public Freighter() {
@@ -25,32 +25,37 @@ public class Freighter {
 
     // push() adds an item to the Containers list; pay close attention to the order!
     public void push(String item) {
-        // TODO implement push()
+        this.Containers.add(item);
     }
 
     // pop() removes an item from the Containers list; pay close attention to the order!
     // pop() should return an empty String instead of an error if you try to pop an
     // item off an empty Containers stack
     public String pop() {
-        // TODO implement pop()
+        if (isEmpty()) {
+            return ""; // Return an empty string if trying to pop from an empty stack
+        }
         return "";
     }
 
     // top() reads the next item to be unloaded from Containers
     public String top() {
-        // TODO implement top()
-        return "";
+        if (isEmpty()) {
+            return ""; // Return an empty string if the stack is empty
+        }
+        return Containers.get(Containers.size() - 1);
     }
 
     // bottom() reads the final item to be unloaded from Containers
     public String bottom() {
-        // TODO implement bottom()
-        return "";
+        if (isEmpty()) {
+            return ""; // Return an empty string if the stack is empty
+        }
+        return Containers.get(0);
     }
 
     // isEmpty() returns true if Containers is empty, and false if otherwise
     public boolean isEmpty() {
-        // TODO implement isEmpty()
-        return true;
+        return this.Containers.isEmpty();
     }
 }
