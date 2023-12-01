@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * Picture a bunch of patrons (or fans) camped outside a movie theater
+ * Picture a line of patrons (or fans) camped outside a movie theater
  * for a major release. Generally speaking, the first guests to line up are the 
  * first to be admitted once the theater opens. By extension, the last in line
  * will be the last admitted. In Computer Science we call this common data
@@ -42,17 +42,17 @@ public class Movie {
         // remove the first patron on line
         String name = this.Patrons.remove(0);
         // return name of the first patron
-        return name; 
+        return name;
     }
 
-    // first() reads the first item in the Patrons queue
+    // first() reads the first item in the Patrons queue and returns the name
     public String first() {
         // get the first patron in queue
         String firstitem = this.Patrons.get(0);
         return firstitem;
     }
 
-    // last() reads the last item in the Patrons queue
+    // last() reads the last item in the Patrons queue and returns the name
     public String last() {
         // get the position of the last patron in queue
        String lastitem = this.Patrons.get(this.Patrons.size() - 1); 

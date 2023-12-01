@@ -68,7 +68,6 @@ public class Arrayer {
             else{
                 // return array
                 result[i]= (int) input [i];
-
             }
         } 
         return result; 
