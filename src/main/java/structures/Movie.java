@@ -26,7 +26,6 @@ import java.util.List;
 
     // enqueue() adds a patron to the Patrons queue
     public void enqueue(String patron) {
-        // TODO implement enqueue()
         this.Patrons.add(patron);
     }
 
@@ -42,9 +41,7 @@ import java.util.List;
     }
 
     // first() reads the first item in the Patrons queue and returns the name
-    public String first() {
-        // TODO implement first()
-    
+    public String first() {    
         if (!this.Patrons.isEmpty()) {
             return this.Patrons.get(0);
         } else {

@@ -22,10 +22,9 @@ public class Freighter {
     public Freighter() {
         this.Containers = new ArrayList<String>();
     }
-
     // push() adds an item to the Containers list; pay close attention to the order!
     public void push(String item) {
-        this.Containers.add(item);
+        Containers.add(item);
     }
 
     // pop() removes an item from the Containers list; pay close attention to the order!
@@ -33,9 +32,11 @@ public class Freighter {
     // item off an empty Containers stack
     public String pop() {
         if (isEmpty()) {
-            return ""; // Return an empty string if trying to pop from an empty stack
+            return ""; 
+    // Return an empty string if trying to pop from an empty stack
         }
-        return "";
+        int lastIndex = Containers.size() - 1;
+        return Containers.remove(lastIndex); 
     }
 
     // top() reads the next item to be unloaded from Containers
@@ -49,7 +50,8 @@ public class Freighter {
     // bottom() reads the final item to be unloaded from Containers
     public String bottom() {
         if (isEmpty()) {
-            return ""; // Return an empty string if the stack is empty
+            return ""; 
+    // Return an empty string if the stack is empty
         }
         return Containers.get(0);
     }

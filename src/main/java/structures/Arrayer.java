@@ -40,7 +40,7 @@ public class Arrayer {
         // TODO implement lastOfFourDigits()
          int[] result = new int[input.length];
         for(int i = 0; i < input.length; i++) {
-            result[i] = input[i] % 1000;
+            result[i] = input[i] % 10;
         }
         return result;
     }
