@@ -27,7 +27,7 @@ public class Movie {
 
     // enqueue() adds a patron to the Patrons queue
     public void enqueue(String patron) {
-        this.Patrons.add(patron);
+        this.Patrons.add(patron); //add a person to the queque
 
     }
 
@@ -36,30 +36,25 @@ public class Movie {
     // dequeue from an empty Patrons queue
     public String dequeue() {
         if (isEmpty()) {
-            return "";
+            return ""; // if queue is empty return blank set
         }
-        else {
+        else { // if queue not empty remove person in position 0 from queue
             String num1 = this.Patrons.get(0);
             this.Patrons.remove(0);
             return num1;
         }
     }
-
     // first() reads the first item in the Patrons queue and returns the name
     public String first() {
         String item = this.Patrons.get(0);
-        return item;
+        return item; 
     }
-
     // last() reads the last item in the Patrons queue and returns the name
     public String last() {
         return this.Patrons.get(this.Patrons.size() - 1 );
     }
-
     // isEmpty() should return true if the Patrons queue is empty and false otherwise 
-    public boolean isEmpty() {
-        return this.Patrons.isEmpty();
-        
-    }
-    
+    public boolean isEmpty() { // isEmpty is answering the question: is the queue empty
+        return this.Patrons.isEmpty();    
+    }  
 }

@@ -26,19 +26,18 @@ public class Freighter {
 
     // push() adds an item to the Containers list; pay close attention to the order!
     public void push(String item) {
-         this.Containers.add(item);
+         this.Containers.add(item); // add item to the containers list
     }
             
-
     // pop() removes an item from the Containers list; pay close attention to the order!
     // pop() should return an empty String instead of an error if you try to pop an
     // item off an empty Containers stack
     public String pop() {
         if (isEmpty()){
-            return "";
+            return "";  //If the list is empty a blank string would return
         }
-        else{
-            return this.Containers.remove(this.Containers.size()-1);
+        else{ //if the list is not empty remove the item at the top of the stack
+            return this.Containers.remove(this.Containers.size()-1); 
         }
     }
 
@@ -57,7 +56,7 @@ public class Freighter {
     // isEmpty() returns true if Containers is empty, and false if otherwise
     public boolean isEmpty() {
         // TODO implement isEmpty()
-       return this.Containers.isEmpty();
+       return this.Containers.isEmpty(); // isEmpty is a boolean that answers if the list is empty or not
        
     }
 }

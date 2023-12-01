@@ -97,7 +97,6 @@ public class Arrayer {
         if(input[i] < 0) {
             return i;
          }
-    
          }
          // if the digit in the position is greater than zero the system returns a -1 becuase it is not negative 
          return -1;
