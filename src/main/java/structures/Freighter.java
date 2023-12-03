@@ -26,6 +26,7 @@ public class Freighter {
     // push() adds an item to the Containers list; pay close attention to the order!
     public void push(String item) {
         // TODO implement push()
+        this.Containers.add(item);
     }
 
     // pop() removes an item from the Containers list; pay close attention to the order!

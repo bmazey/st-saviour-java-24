@@ -68,10 +68,14 @@ public class Hello {
         //     System.out.println("pandas is equal to concat string pan + das");
         // }
 
-        int[] anArray = new int[] {1, 2, 3, 4, 5, 6, 7, 8};
-        int[] result = Arrayer.evensOnly(anArray);
-        for(int i = 0; i < result.length; i++) {
-            System.out.println(result[i]);
+        // int[] myArray = new int[4];
+        int[] myArray = new int[]{4, 4, 3, 1};
+        // [0, 0, 0, 0]
+        System.out.println("array length: " + myArray.length);
+        System.out.println("first item: " + myArray[0]);
+        System.out.println("last item: " + myArray[myArray.length - 1]);
+        for(int i = 0; i < myArray.length; i++) {
+
         }
     }
 

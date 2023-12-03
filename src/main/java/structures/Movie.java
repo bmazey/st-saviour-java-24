@@ -35,6 +35,7 @@ public class Movie {
     // dequeue from an empty Patrons queue
     public String dequeue() {
         // TODO implement dequeue()
+        this.Patrons.get(0);
         return "";
     }
 

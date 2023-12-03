@@ -1,7 +1,5 @@
 package structures;
 
-import java.util.ArrayList;
-
 // documentation: https://www.baeldung.com/java-arrays-guide
 public class Arrayer {
     /*
@@ -24,7 +22,7 @@ public class Arrayer {
 
         // create an array of the correct size
         int[] result = new int[count];
-        
+
         // start at position 0 for the result array
         int position = 0;
         // go over the input array again
