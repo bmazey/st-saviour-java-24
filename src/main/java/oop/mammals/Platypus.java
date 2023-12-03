@@ -1,5 +1,8 @@
 package oop.mammals;
 
+/**
+ * A class which defines all Platypus.
+ */
 public final class Platypus extends Monotreme {
     
     // Constructor method for Platypus.

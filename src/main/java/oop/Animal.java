@@ -1,5 +1,8 @@
 package oop;
 
+/**
+ * A class which defines all Animals.
+ */
 public abstract class Animal {
 
     // All animals have names.

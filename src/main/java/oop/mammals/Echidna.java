@@ -1,5 +1,8 @@
 package oop.mammals;
 
+/**
+ * A class which defines all Monotremes.
+ */
 public final class Echidna extends Monotreme {
     
     // Constructor method for Echidna.

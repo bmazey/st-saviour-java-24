@@ -2,6 +2,9 @@ package oop.mammals;
 
 import oop.Animal;
 
+/**
+ * A class which defines all Mammals.
+ */
 public abstract class Mammal extends Animal {
 
     // All Mammals are warm blooded.
