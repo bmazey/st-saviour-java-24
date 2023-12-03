@@ -65,5 +65,16 @@ public class Hello {
         // if ("pandas" == "pan" + "das") {
         //     System.out.println("pandas is equal to concat string pan + das");
         // }
+
+    //int[] myArray = new int[4];
+    int[] myArray = new int[]{4,4,3,1};
+    System.out.println("array length: "+ myArray.length);
+    System.out.println("first item: " + myArray[0]);
+    for (int i = 0; i< myArray.length; i++) {
+        
     }
+    }
+
+    
+
 }
