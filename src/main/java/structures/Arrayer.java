@@ -67,10 +67,10 @@ public class Arrayer {
         for (int i = 0; i<input.length; i++) {
            // checks to see if the value at input i has a decimal greater or equal to 0.5
             if (input[i]%1 >= 0.5) {
-               // changes the type to an int and adds one
+                // changes the type to an int and adds one
                 result[i] = (int)input[i]+ 1;
             } else {
-               // if less than 0.5 this changes the type to an int
+                // if less than 0.5 this changes the type to an int
                 result[i] = (int)input[i];
             }
         }
