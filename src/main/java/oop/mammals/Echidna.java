@@ -17,7 +17,7 @@ public final class Echidna extends Monotreme {
     }
 
     // hatch() removes the first Echidna in the nest.
-    public Echidna hatch() throws Exception {
+    public Echidna hatch() throws Exception {                                                                                                           
         // Check to see if nest is empty.
         if (this.getNest().isEmpty()) {
             new Exception(this.getName() + "'s nest is empty!");
