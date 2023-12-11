@@ -25,7 +25,7 @@ public class Freighter {
     // push() adds an item to the Containers list; pay close attention to the order!
     public void push(String item) {
          this.Containers.add(item); // add item to the containers list
-    }        
+    }        gg
     // pop() removes an item from the Containers list; pay close attention to the order!
     // pop() should return an empty String instead of an error if you try to pop an
     // item off an empty Containers stack
