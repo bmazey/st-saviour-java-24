@@ -1,5 +1,12 @@
 package oop.automobiles;
 
-public class Car {
+public abstract class Car {
+
+    private String drive;
+
+    public void setDrive(String drive) {
+        this.drive = drive;
+    }
+    
     
 }
