@@ -21,7 +21,4 @@ public abstract class Car {
     public String getWheels() {
         return this.wheels;
     }
-
-    public int setLicense(int license){
-    }
 }
