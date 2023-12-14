@@ -1,4 +1,4 @@
-package oop.mammals.Beverages;
+package oop.Beverages;
 
 public class Drinks {
     
@@ -12,12 +12,11 @@ public class Drinks {
         this.Flavor = Flavor;
     }
 
-    public String {
         
-    }
 
     public String smell (String scent){
         String text = this.Flavor + " smells like " + scent + "!";
         return text;
     }
 }
+
