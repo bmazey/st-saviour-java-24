@@ -1,19 +1,19 @@
-package oop.mammals;
+package oop.Juice;
 
 /**
  * A class which defines all Monotremes.
  */
-public final class Echidna extends Monotreme {
+public final class AppleJuice extends Juice {
     
     // Constructor method for Echidna.
-    public Echidna(String name) {
+    public AppleJuice.Drink(String name) {
         this.setName(name);
     }
 
     // layEgg() creates a new Echidna from a name, and adds it to the nest.
-    public void layEgg(String name) {
-        Echidna baby = new Echidna(name);
-        this.getNest().add(baby);
+    public void Drink Juice(String name) {
+        Apple Juice = new Drink(name);
+        this.getDrink().add(juice);
     }
 
     // hatch() removes the first Echidna in the nest.

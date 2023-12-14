@@ -1,0 +1,12 @@
+package oop.CaffinatedDrinks;
+
+import java.util.ArrayList;
+import java.util.List;
+public abstract class Coffee extends CaffinatedDrinks {
+
+    // 
+    private List<Coffee> Nest = new ArrayList<Monotreme>();
+
+    // 'getter' method for Eggs list.
+    public List<Monotreme> getNest() {
+        return this.Nest;
