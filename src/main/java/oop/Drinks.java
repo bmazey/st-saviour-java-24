@@ -1,4 +1,4 @@
-package oop.Beverages;
+package oop;
 
 public class Drinks {
     
