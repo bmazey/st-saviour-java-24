@@ -7,5 +7,4 @@ public abstract class Manual extends Car {
     public boolean isManual() {
         return MANUAL_STICKSHIFT;
     }
-
 }
