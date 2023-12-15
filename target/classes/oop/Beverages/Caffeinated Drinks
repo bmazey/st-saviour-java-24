@@ -4,9 +4,13 @@ import oop.Drinks;
 
 public abstract class Caffeinated Drinks {
 
-    // All caffeinated drinks have caffeine 
+    /**
+     * 
+     */ All caffeinated drinks have caffeine 
     private final boolean HAS CAFFEINE = true;
-
+    /**
+     * Return caffeinated if true
+     */
     public boolean isCaffienated() {
         return Caffeinated;
     

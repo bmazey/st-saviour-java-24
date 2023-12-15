@@ -1,0 +1,20 @@
+package oop.Beverages;
+
+public Final class Cappuchino extends coffee {
+    public Cappuchino(String name) {
+        this.setName(name);
+    }
+
+    // 
+    public void PlaceOrder(String name) {
+        Cappuchino ordernumber = new Cappuchino(name);
+        this.getOrder().add(ordernumber);
+    }
+    public Cappuchino take order() throws Exception {
+        
+        if (this.getOrder().isEmpty()) {
+            new Exception(this.getOrder() + "no order!");
+        }
+
+        Cappuchino ordernumber = (Cappuchino)this.getOrder().remove(0);
+        return "order number";
