@@ -1,6 +1,6 @@
 package oop.entertainment;
 
-import oop.mammals.Echidna;
+import oop.entertainment.HarryPotter;
 
 public final class HarryPotter extends Fiction {
 
