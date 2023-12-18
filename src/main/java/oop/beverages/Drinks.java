@@ -1,10 +1,15 @@
-package oop;
+package oop.beverages;
 
+/**
+ * A class that defines all drinks
+ */
 public class Drinks {
+
   /** 
    * Creates new variable, all drinks have flavors
    */  
     private String Flavor;
+
     /**
      * Getter methods created in order to call upon this.Flavor
      * @return
@@ -12,6 +17,7 @@ public class Drinks {
     public String getFlavor(){
         return this.Flavor;
     }
+
     /**
      * Setter method allows for this.Flavor to be defined after being called
      */
@@ -21,7 +27,7 @@ public class Drinks {
 
         
     /**
-     * Creates new method 'smell' for all future classes
+     * Creates new method 'smell' for all future classes. Drinks can have a scent.
      * @param scent
      * @return
      */
