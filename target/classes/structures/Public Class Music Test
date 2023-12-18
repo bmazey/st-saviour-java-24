@@ -1,0 +1,7 @@
+Public class MusicTest {
+    public void testmusic() {
+        popmusic electronicpop = new popmusic(
+            genre: "Telephone" artist; 
+        )
+    }
+}

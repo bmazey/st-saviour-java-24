@@ -1,0 +1,6 @@
+Public Abstract Class Music {
+    private string genre;
+}
+public string get genre ();
+    return this.genre
+Public String  

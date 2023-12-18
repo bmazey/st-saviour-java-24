@@ -4,7 +4,7 @@ package structures;
 public class Arrayer {
   
     public static int[] evensOnly(int[] input) {
-    // TODO implement evensOnly() 
+    // Creating a for loop to evaluate the array then an if statment to declare that if the number mod by 2 is 0 increase the count
         int count = 0; 
         for(int i = 0; i < input.length; i++){
             if(input [i] % 2 == 0 ){
@@ -17,7 +17,6 @@ public class Arrayer {
             if(input[i] % 2 == 0 ){
                 result[position] = input[i];
                 position++;
-
             }
         return result;
     }
@@ -30,8 +29,9 @@ public class Arrayer {
      * ex: [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
      */
 
-    // establishing a for loop to evalute the input and determine the remainder which is the last digits
+   
     public static int[] lastOfFourDigits(int[] input) {
+    // establishing a for loop to evalute the input and determine the remainder which is the last digits
         int[] result = new int[input.length];
             for(int i = 0; i < input.length; i++) {
                 result[i] = input[i] % 10;
@@ -45,8 +45,9 @@ public class Arrayer {
      * 
      * ex: [1.2, 3.6, 7.9, 4.1] -> [1, 4, 8, 4]
      */
-// setting up an if statment that declares if the value mod by 1 is greater tahn or equal to 0.5 the vaule should be rounded up
+    
     public static int[] roundUp(double[] input) {
+    // setting up an if statment that declares if the value mod by 1 is greater tahn or equal to 0.5 the vaule should be rounded up
     int[] result = new int [input.length];
     for (int i = 0; i < input.length; i++) {
         result[i] = (int) input[i];
@@ -54,7 +55,7 @@ public class Arrayer {
                 result[i]++;
             }
         }
-            return result;
+    return result;
     }
 
     /*
@@ -64,10 +65,11 @@ public class Arrayer {
      * 
      * ex: [0, 4, -2, 17] -> 2 
      */
-    // for loop used to establish the array + positions and if statment that declares any number less than 0 is negative and should be returned 
+   
     public static int findNegative(int[] input) {
+    // for loop used to establish the array + positions and if statment that declares any number less than 0 is negative and should be returned 
         for(int i = 0; i < input.length; i++) {
-            if(input[i] < 0) {
+        if(input[i] < 0) {
         return i;
         }
         }

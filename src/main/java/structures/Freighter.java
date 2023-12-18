@@ -18,16 +18,18 @@ public class Freighter {
     // identifying containers as a list 
     private List<String> Containers;
 
-    // "this." attaches array to list
     public Freighter() {
+    // "this." attaches array to list
         this.Containers = new ArrayList<String>();
     }
-    // adding an item to the Containers list
+
     public void push(String item) {
+    // adding an item to the Containers list
         Containers.add(item);
     }
-    // creating the condition to return an empty string if you are removing from an empty stack
+
     public String pop() {
+    // creating the condition to return an empty string if you are removing from an empty stack
         if (isEmpty()) {
             return "";  
         }
@@ -35,24 +37,25 @@ public class Freighter {
         return Containers.remove(lastIndex);
     }
 
-    // evaluting the next item in the list containers 
     public String top() {
+    // evaluting the next item in the list containers 
         if (isEmpty()) {
             return ""; 
         }
         return Containers.get(Containers.size() - 1);
     }
 
-    // evaluating the final item to be removed from Containers and return and empty string if empty 
+   
     public String bottom() {
+    // evaluating the final item to be removed from Containers and return and empty string if empty 
         if (isEmpty()) {
             return ""; 
         }
         return Containers.get(0);
     }
 
-    // Setting up a true or false condition that prints true if empty and false if not
     public boolean isEmpty() {
+    // Setting up a true or false condition that prints true if empty and false if not
         return this.Containers.isEmpty();
     }
 }

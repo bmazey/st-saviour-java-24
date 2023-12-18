@@ -21,34 +21,36 @@ public class Movie {
     // setting up the lists for patrons 
     private List<String> Patrons;
 
-    // connecting the list Patrons to the array using this.
+    
     public Movie() {
+    // connecting the list Patrons to the array using this.
         this.Patrons = new ArrayList<String>();
     }
 
-    // Using enqueue() to add a patron to the next position 
     public void enqueue(String patron) {
+      // Using enqueue() to add a patron to the next position 
         this.Patrons.add(patron);
     }
 
-    // Using dequeue () to remove from the next postion and return an empty string if postion already empty 
     public String dequeue() {
+    // Using dequeue () to remove from the next postion and return an empty string if postion already empty 
         if (!this.Patrons.isEmpty()) {
             return this.Patrons.remove(0);
         }
         return "";   
     }
 
-    // declaring that if the list isn't empty then the first postion should be returned 
     public String first() {    
+    // declaring that if the list isn't empty then the first postion should be returned 
         if (!this.Patrons.isEmpty()) {
             return this.Patrons.get(0);
-        } else {
+        } 
+        else {
             return ""; 
         }
     }
-    //declarng that if the list isn't empty then the last postion should be returned 
-    public String last() {         
+    public String last() {   
+    //declarng that if the list isn't empty then the last postion should be returned       
         if (!this.Patrons.isEmpty()) {
             return this.Patrons.get(this.Patrons.size() - 1);
         }
@@ -56,8 +58,8 @@ public class Movie {
             return "";
         }
     }
-    // creating a true or false condition that will return true if the Patrons is empty and false if not 
     public boolean isEmpty() {
+    // creating a true or false condition that will return true if the Patrons is empty and false if not 
         return this.Patrons.isEmpty();
     }
     
