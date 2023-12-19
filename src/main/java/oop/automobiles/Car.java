@@ -2,23 +2,23 @@ package oop.automobiles;
 
 public abstract class Car {
 
-    private String drive;
+    private String license;
 
-    public void setDrive(String drive) {
-        this.drive = drive;
+    private String wheels;
+
+    public void setLicense(String license) {
+        this.license = drive;
     }
 
-    public String getDrive() {
-        return this.drive;
+    public String getLicense() {
+        return this.license;
     }
-    
-    public String wheels;
 
-    public void setWheels(String wheels) {
+    public void setWheels(int wheels) {
         this.wheels = wheels;
     }
 
-    public String getWheels() {
+    public int getWheels() {
         return this.wheels;
     }
 }

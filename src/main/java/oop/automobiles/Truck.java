@@ -3,11 +3,19 @@ package oop.automobiles;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Truck extends Manual {
+public class Truck extends Manual {
 
-      private List<Truck> sizeLarge = new ArrayList<Truck>();
+      private List<String> Cargo = new ArrayList<String>();
 
-      public List<Truck> getLarge() {
-        return this.sizeLarge;
+      public List<String> getCargo() {
+        return this.Cargo;
+    }
+
+    public void loadCargo(String item) {
+      this.Cargo.add(item);
+    }
+
+    public boolean searchCargo(String item) {
+      return this.Cargo.contains(item);
     }
 }

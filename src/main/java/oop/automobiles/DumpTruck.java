@@ -10,4 +10,6 @@ public final class DumpTruck extends Truck {
         DumpTruck waste = new DumpTruck(drive);
         this.getLarge().add(waste);
     }
+
+    
 }

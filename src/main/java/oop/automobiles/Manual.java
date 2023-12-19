@@ -1,6 +1,6 @@
 package oop.automobiles;
 
-public abstract class Manual extends Car {
+public class Manual extends Car {
     
     private final boolean MANUAL_STICKSHIFT = true;
 
