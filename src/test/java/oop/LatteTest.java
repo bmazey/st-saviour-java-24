@@ -34,5 +34,14 @@ public class LatteTest {
             assert order instanceof Latte;
             assert order.isCaffinated();
         }
+
+        try{
+            sweet.TakeOrder();
+            sweet.TakeOrder();
+        } catch (Exception a) {
+            fail("There are no orders.");
+        }
+
+        assert sweet.getOrder().isEmpty();
     }
 }
