@@ -31,7 +31,7 @@ public final class Cappuccino extends Coffee{
          * if statement checks if queue is empty
          */
         if (this.getOrder().isEmpty()){
-            new Exception (this.getFlavor() + " doesn't exist.");
+            new Exception (this.getFlavor() + " is out of stock.");
         }
 
         Cappuccino OrderNumber = (Cappuccino)this.getOrder().remove(0);

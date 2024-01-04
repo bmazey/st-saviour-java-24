@@ -30,7 +30,7 @@ public final class Latte extends Coffee{
          * If statement checks if order queue is empty
          */
         if (this.getOrder().isEmpty()){
-            new Exception (this.getFlavor() + " doesn't exist.");
+            new Exception (this.getFlavor() + " is out of stock.");
         }
 
         Latte OrderNumber = (Latte)this.getOrder().remove(0);
