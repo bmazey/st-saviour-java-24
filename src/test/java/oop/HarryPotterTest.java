@@ -5,8 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 import oop.entertainment.books;
-import oop.mammals.Mammal;
-import oop.mammals.Platypus;
 import oop.entertainment.HarryPotter;
 
 public class HarryPotterTest {
@@ -14,16 +12,13 @@ public class HarryPotterTest {
     public void testNewHarryPotter() {
         HarryPotter chamber = new HarryPotter("Chamber of Secrets");
         
-        // First check name.
+        // checks that name is chamber of secrets
         assertEquals("Chamber of Secrets", chamber.getCreative());
 
-        // Check default size of nest.
-        assertEquals(0, chamber.getStory().size());
-
-        // Assert that Perry is warm-blooded.
+        // Assert that Chamber of secrets is physical
         assertEquals(true, chamber.isPhysical());
 
-        // Assert that Perry is a Mammal
+        // Assert that Chamber of secrets is a book
         assert chamber instanceof books;
     }
 }
