@@ -4,12 +4,12 @@ import oop.entertainment.HarryPotter;
 
 public final class HarryPotter extends Fiction {
 
-    public HarryPotter (String title) {
-        this.setCreative (title);
+    public HarryPotter (String name) {
+        this.setTitle (name);
     }
     
-    public void addTitle(String title) {
-        HarryPotter number = new HarryPotter(title);
+    public void addName(String name) {
+        HarryPotter number = new HarryPotter(name);
         this.getStory().add(number);
     }
 }
