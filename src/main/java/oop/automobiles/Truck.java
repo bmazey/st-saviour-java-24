@@ -7,6 +7,11 @@ public class Truck extends Manual {
 
       private List<String> Cargo = new ArrayList<String>();
 
+      public Truck(String license, int wheels) {
+        this.setLicense(license);
+        this.setWheels(wheels);
+      }
+
       public List<String> getCargo() {
         return this.Cargo;
     }

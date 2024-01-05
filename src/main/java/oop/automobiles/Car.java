@@ -4,10 +4,10 @@ public abstract class Car {
 
     private String license;
 
-    private String wheels;
+    private int wheels;
 
     public void setLicense(String license) {
-        this.license = drive;
+        this.license = license;
     }
 
     public String getLicense() {
