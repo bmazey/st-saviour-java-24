@@ -1,6 +1,10 @@
 Public Abstract Class Music {
     private string genre;
 }
-public string get genre ();
-    return this.genre
-Public String  
+public string get Genre ();
+    return this.Genre;
+
+Public String setGenre(String Genre) {
+    // operating as a setter for the string
+    this.genre = genre 
+}
