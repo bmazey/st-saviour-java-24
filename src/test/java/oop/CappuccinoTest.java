@@ -21,7 +21,7 @@ public class CappuccinoTest {
         /*
          * This test adds an order of mocha to the queue/order list.
          */
-        assertEquals("French Vanilla", mocha.getOrder());
+        assertEquals("Mocha", mocha.getFlavor());
 
         /*
          * This test checks the size of the queue/order list.
@@ -41,7 +41,7 @@ public class CappuccinoTest {
         /*
          * This test checks if the smell variable follows. Someone is smelling the drink.
          */
-        assertEquals("Smells nice!", mocha.smell("Chocolate"));
+        assertEquals("Mocha smells like Chocolate!", mocha.smell("Chocolate"));
 
     }
 }
