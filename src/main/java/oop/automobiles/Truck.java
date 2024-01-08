@@ -14,7 +14,7 @@ public class Truck extends Manual {
 
       public List<String> getCargo() {
         return this.Cargo;
-    }
+      }
 
     public void loadCargo(String item) {
       this.Cargo.add(item);
