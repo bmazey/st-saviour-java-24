@@ -20,13 +20,5 @@ public class Palindrome {
 
          return word.equals(reverse);
      }
-        String reverse = ""; {
-         for(int i = 0; i < word .length(); i++)
-         reverse = word.charAt(i) + reverse;
-        }{
-
-
-        return word.equals(reverse);
-        }
 }
 
