@@ -14,7 +14,7 @@ public class Password {
      */
 
     public static String generatePassword() {
-<<<<<<< HEAD
+
         // TODO - implement generatePassword() ...
         String letters = "abcdefghijklmnopqrstuvwxyz";
         String digits = "0123456789";
@@ -36,7 +36,6 @@ public class Password {
 
         return password.toString();
   
-=======
         String password = "";
 
         // create random number generator
@@ -61,7 +60,6 @@ public class Password {
         password += symbols.charAt(random.nextInt(symbols.length()));
 
         return password;
->>>>>>> 94827c21a4dc9fd842f94efbed1836e7d2857e24
     }
    
 }

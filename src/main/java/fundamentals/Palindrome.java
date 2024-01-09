@@ -9,7 +9,7 @@ public class Palindrome {
      */
 
      public static boolean isPalindrome(String word) {
-<<<<<<< HEAD
+
          String reverse = "";
 
          for (int i = 0; i < word.length(); i++) {
@@ -19,15 +19,14 @@ public class Palindrome {
          System.out.println("Reverse: " + reverse);
 
          return word.equals(reverse);
-     }}
-=======
-        String reverse = "";
-
-        for(int i = 0; i < word.length(); i++) {
+     }
+        String reverse = ""; {
+         for(int i = 0; i < word .length(); i++)
          reverse = word.charAt(i) + reverse;
-        }
+        }{
+
 
         return word.equals(reverse);
-     }
+        }
 }
->>>>>>> 94827c21a4dc9fd842f94efbed1836e7d2857e24
+

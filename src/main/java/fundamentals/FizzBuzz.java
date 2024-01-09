@@ -10,7 +10,6 @@ public class FizzBuzz {
      */
 
     public static String fizzBuzz(int i) {
-<<<<<<< HEAD
         if(i % 15 == 0){
             return "fizzbuzz";
         }
@@ -21,20 +20,6 @@ public class FizzBuzz {
             return "fizz";
         }
         return "";
-=======
-        String result = "";
 
-        // check multiple of 3
-        if (i % 3 == 0) {
-            result += "fizz";
-        }
-
-        // check multiple of 5
-        if(i % 5 == 0) {
-            result += "buzz";
-        }
-
-        return result;
->>>>>>> 94827c21a4dc9fd842f94efbed1836e7d2857e24
     }
 }

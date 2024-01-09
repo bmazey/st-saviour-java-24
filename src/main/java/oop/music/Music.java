@@ -20,4 +20,7 @@ public abstract class Music {
     public String listen(String listener) {
         return listener + " listens to " + this.title  + " for " + this.duration + " minutes.";
     }
+    public String dance(String dancer) {
+        return dancer + " dances for " + this.duration + " and has a lot of fun!";
+    }
 }
