@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
 
-import oop.mammals.Mammal;
+import oop.music.Electronic;
 import oop.music.Hiphop;
 import oop.music.Music;
 import oop.music.Pop;
@@ -27,7 +27,12 @@ public class MusicTest {
 
         assertEquals("Giovanna listens to Smells Like Teen Spirit by Nirvana for 4 minutes.", SmellsLikeTeenSpirit.listen("Giovanna"));
     }
+    @Test
+    public void testElectronic() {
+        Electronic Vanished = new Electronic("Vanished", 4, "Crystal Castles");
 
+        assertEquals("Raina listens to Vanished by Crystal Castles for 4 minutes.", Vanished.listen("Raina"));
+    }
     @Test
     public void testHiphop() {
         Hiphop ElectricRelaxation = new Hiphop("Electric Relaxation", 4, "A Tribe Called Quest");
@@ -37,6 +42,19 @@ public class MusicTest {
     @Test
     public void testGenre() {
         ArrayList<Music> Genres = new ArrayList<Music>();
+        
+        Hiphop ElectricRelaxation = new Hiphop("Electric Relaxation", 4, "A Tribe Called Quest");
+        Rock SmellsLikeTeenSpirit = new Rock("Smells Like Teen Spirit", 4, "Nirvana");
+        Pop WeFoundLove = new Pop("We Found Love", 3, "Rihanna");
+
+        Genres.add(ElectricRelaxation);
+        Genres.add(SmellsLikeTeenSpirit);
+        Genres.add(WeFoundLove);
+
+        String title = Genres.get(Genres.size() - 1).getTitle();
+
+        assert title.equals("We Found Love");
+
         // assert Genre instanceof Music;
 
         // assertEquals("All genres are music", this.genre);

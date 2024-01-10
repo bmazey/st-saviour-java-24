@@ -15,7 +15,7 @@ public abstract class Music {
     public String getGenre() {
         return this.genre;
     }
-    public String setGenre(String genre) {
+    public void setGenre(String genre) {
         this.genre = genre;
     }
 //creating the getter that tells the string to access the artist method
@@ -47,12 +47,4 @@ public abstract class Music {
         return dancer + " dances for " + this.duration + " and has a lot of fun!";
     }
 
-    // Music has multiple genres
-    // ArrayList<String> genre = new ArrayList<String>();
-    //     genre.add("We Found Love");
-    //     genre.add("Smells Like Teen Spirit");
-    //     genre.add("Electric Relaxation"); {
-    //         return this.genre;
-    //     }
-    // }
 }
