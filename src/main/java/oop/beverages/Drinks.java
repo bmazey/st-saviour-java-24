@@ -5,9 +5,9 @@ package oop.beverages;
  */
 public class Drinks {
 
-  /** 
-   * Creates new variable, all drinks have flavors
-   */  
+    /**
+     * Creates new variable, all drinks have flavors
+     */ 
     private String Flavor;
 
     /**
@@ -31,7 +31,7 @@ public class Drinks {
      * @param scent
      * @return
      */
-    public String smell (String scent){
+    public String smell(String scent){
         String text = this.Flavor + " smells like " + scent + "!";
         return text;
     }

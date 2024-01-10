@@ -28,12 +28,15 @@ public final class Cappuccino extends Coffee{
     public Cappuccino TakeOrder() throws Exception{
 
         /**
-         * if statement checks if queue is empty
+         * if statement checks if queue is empty. Will return that the flavor is out of stock.
          */
         if (this.getOrder().isEmpty()){
             new Exception (this.getFlavor() + " is out of stock.");
         }
 
+        /**
+         * Order is removed from the queue.
+         */
         Cappuccino OrderNumber = (Cappuccino)this.getOrder().remove(0);
         return OrderNumber;
     }

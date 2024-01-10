@@ -10,7 +10,7 @@ import oop.beverages.Coffee;
 
 public class LatteTest {
 
-    /*
+    /**
      * This creates a new class to test the latte class. 
      */
     @Test
@@ -21,37 +21,22 @@ public class LatteTest {
         sweet.PlaceOrder("Caramel");
         sweet.PlaceOrder("Almond");
 
-        /*
-         * The try function attempts to take the peppermint order off the queue/order list.
-         * It catches the exception (C)
-         */
-        // Latte peppermint;
-        // try {
-        //     peppermint = sweet.TakeOrder();
-        // } catch (Exception a) {
-        //     peppermint = new Latte("Fail");
-        // }
-
-        /*
-         * Asserts sweet (peppermint) as an instance of a Latte
-         */
-        // assertEquals("Peppermint", sweet.getFlavor());
-        // assert sweet.isCaffinated();
-        // assert sweet instanceof Latte;
-
-        /*
+        /**
          * This function checks the size of the order list after peppermint is removed.
          */
         assertEquals(3, sweet.getOrder().size());
 
-        /*
+        /**
          * Asserts the type and properties of all drinks in the order list.
          */
         for (Coffee order : sweet.getOrder()) {
             assert order instanceof Latte;
-            assert order.isCaffinated();
+            assert order.isCaffeinated();
         }
 
+        /**
+         * Try removes all orders from the order list and catches the error if the list is empty.
+         */
         try{
             sweet.TakeOrder();
             sweet.TakeOrder();
@@ -60,6 +45,9 @@ public class LatteTest {
             fail("There are no orders.");
         }
 
+        /**
+         * Returns true or false if the order list is empty.
+         */
         assert sweet.getOrder().isEmpty();
     }
 }
