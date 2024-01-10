@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import oop.entertainment.books;
+import oop.entertainment.Books;
 import oop.entertainment.HarryPotter;
 
 public class HarryPotterTest {
@@ -13,12 +13,12 @@ public class HarryPotterTest {
         HarryPotter chamber = new HarryPotter("Chamber of Secrets");
         
         // checks that name is chamber of secrets
-        assertEquals("Chamber of Secrets", chamber.getCreative());
+        assertEquals("Chamber of Secrets", chamber.getTitle());
 
         // Assert that Chamber of secrets is physical
         assertEquals(true, chamber.isPhysical());
 
         // Assert that Chamber of secrets is a book
-        assert chamber instanceof books;
+        assert chamber instanceof Books;
     }
 }

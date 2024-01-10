@@ -1,14 +1,14 @@
 package oop.entertainment;
 
-public abstract class entertainment{
+public abstract class Entertainment{
     
-    private String creative;
+    private String title;
     
-    public String getCreative(){
-        return this.creative;
+    public String getTitle(){
+        return this.title;
     }
-    public void setCreative(String creative){
-        this.creative = creative;
+    public void setTitle(String title){
+        this.title = title;
     }
     private String pasttime;
     public String getPasttime(){

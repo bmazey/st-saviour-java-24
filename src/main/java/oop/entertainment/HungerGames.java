@@ -1,12 +1,12 @@
 package oop.entertainment;
 
-public class HungerGames extends fiction{
+public class HungerGames extends Fiction{
    
-    public HungerGames(String title) {
-        this.setCreative(title);
+    public HungerGames(String name) {
+        this.setTitle(name);
     }
-    public void addTitle(String title){
-        HungerGames number = new HungerGames(title);
+    public void addName(String name){
+        HungerGames number = new HungerGames(name);
         this.getStory().add(number);
     }
 }
