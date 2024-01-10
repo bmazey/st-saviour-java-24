@@ -23,7 +23,7 @@ public class PlatypusTest {
         assertEquals(true, perry.isWarmBlooded());
 
         // Assert that Perry is a Mammal
-        assert perry instanceof Mammal;
+        assert perry instanceof Mammal ;
         
         // Feed Perry
         assertEquals("Perry eats ants! Om nom nom ...", perry.eat("ants"));

@@ -1,11 +1,23 @@
 package oop.music;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import oop.mammals.Mammal;
+
 public abstract class Music {
 //identifying the data type for each method 
     private String title;
     private int duration;
     private String artist;
+    private String genre;
 
+    public String getGenre() {
+        return this.genre;
+    }
+    public String setGenre(String genre) {
+        this.genre = genre;
+    }
 //creating the getter that tells the string to access the artist method
     public String getArtist() {
         return this.artist;
@@ -34,4 +46,13 @@ public abstract class Music {
     public String dance(String dancer) {
         return dancer + " dances for " + this.duration + " and has a lot of fun!";
     }
+
+    // Music has multiple genres
+    // ArrayList<String> genre = new ArrayList<String>();
+    //     genre.add("We Found Love");
+    //     genre.add("Smells Like Teen Spirit");
+    //     genre.add("Electric Relaxation"); {
+    //         return this.genre;
+    //     }
+    // }
 }
