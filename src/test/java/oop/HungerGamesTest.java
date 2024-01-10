@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 import oop.entertainment.Books;
-import oop.entertainment.HarryPotter;
 import oop.entertainment.HungerGames;
 
 public class HungerGamesTest {
