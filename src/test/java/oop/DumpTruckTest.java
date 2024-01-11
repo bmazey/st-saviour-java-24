@@ -10,7 +10,7 @@ import oop.automobiles.Manual;
 public class DumpTruckTest {
 
     @Test
-    public void testTruck() {
+    public void testNewDumpTruck() {
         DumpTruck myDumpTruck = new DumpTruck("NYCJAVAGIRL",  8);
 
         assertEquals("NYCJAVAGIRL", myDumpTruck.getLicense());
