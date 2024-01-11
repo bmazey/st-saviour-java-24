@@ -11,7 +11,7 @@ public class HungerGamesTest {
     public void testNewHungerGames() {
         HungerGames catching = new HungerGames("Catching Fire");
         
-        // checks that name is Catching Fire
+        // Checks that name is Catching Fire
         assertEquals("Catching Fire", catching.getTitle());
 
         // Assert that Catching Fire is physical

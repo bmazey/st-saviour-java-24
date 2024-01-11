@@ -12,7 +12,7 @@ public class HarryPotterTest {
     public void testNewHarryPotter() {
         HarryPotter chamber = new HarryPotter("Chamber of Secrets");
         
-        // checks that name is chamber of secrets
+        // Checks that name is chamber of secrets
         assertEquals("Chamber of Secrets", chamber.getTitle());
 
         // Assert that Chamber of secrets is physical
