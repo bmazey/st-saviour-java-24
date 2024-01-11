@@ -3,13 +3,14 @@ package oop.automobiles;
 public final class DumpTruck extends Truck {
 
     public DumpTruck(String license, int wheels) {
-        // super(license, wheels);
-        this.setLicense(license);
-        this.setWheels(wheels);
+        super(license, wheels);
     }
 
-    // public void Dumptruck(String item) {
-    //     Dumptruck waste = new DumpTruck(item, getWheels());
-    //     this.getLicense();
-    // }
+    public void loadGarbage(String item) {
+        this.getCargo().add(item);
+    }
+
+    public void dumpGarbage(String item) {
+        this.getCargo().clear(); // Removes all items from the cargo list (dumps all the garbage)
+    }
 }
