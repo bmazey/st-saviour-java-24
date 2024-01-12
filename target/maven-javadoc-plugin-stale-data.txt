@@ -1,0 +1,53 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'/home/avenetian/st-saviour-java-24/st-saviour-java-24/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'saviour-2024 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'saviour-2024 1.0-SNAPSHOT API'
+fundamentals
+structures
+oop
+oop.mammals
+oop.entertainment
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/src/main/java = 1701891100471
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/element-list = 1705074954095
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/constant-values.html = 1705074954183
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/overview-tree.html = 1705074954424
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/package-search-index.js = 1705074954479
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/package-search-index.zip = 1705074954581
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/type-search-index.js = 1705074954585
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/type-search-index.zip = 1705074954597
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/member-search-index.js = 1705074954598
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/member-search-index.zip = 1705074954610
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/index-all.html = 1705074954615
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/allclasses-index.html = 1705074954678
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/allpackages-index.html = 1705074954706
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/deprecated-list.html = 1705074954739
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/allclasses.html = 1705074954765
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/index.html = 1705074954809
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/overview-summary.html = 1705074954822
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/help-doc.html = 1705074954844
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/stylesheet.css = 1705074954849
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/script.js = 1705074954858
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/search.js = 1705074954871
+/home/avenetian/st-saviour-java-24/st-saviour-java-24/target/site/apidocs/jquery-ui.overrides.css = 1705074954965
