@@ -1,0 +1,53 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'/home/gmilisic/st-saviour-java-24/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/gmilisic/st-saviour-java-24/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'saviour-2024 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/home/gmilisic/st-saviour-java-24/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'saviour-2024 1.0-SNAPSHOT API'
+fundamentals
+structures
+oop
+oop.mammals
+oop.music
+/home/gmilisic/st-saviour-java-24/src/main/java = 1704479466781
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/element-list = 1705069790788
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/constant-values.html = 1705069790865
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/overview-tree.html = 1705069791038
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/package-search-index.js = 1705069791078
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/package-search-index.zip = 1705069791098
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/type-search-index.js = 1705069791099
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/type-search-index.zip = 1705069791100
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/member-search-index.js = 1705069791100
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/member-search-index.zip = 1705069791101
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/index-all.html = 1705069791103
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/allclasses-index.html = 1705069791115
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/allpackages-index.html = 1705069791122
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/deprecated-list.html = 1705069791131
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/allclasses.html = 1705069791137
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/index.html = 1705069791149
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/overview-summary.html = 1705069791152
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/help-doc.html = 1705069791157
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/stylesheet.css = 1705069791161
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/script.js = 1705069791162
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/search.js = 1705069791167
+/home/gmilisic/st-saviour-java-24/target/site/apidocs/jquery-ui.overrides.css = 1705069791183
