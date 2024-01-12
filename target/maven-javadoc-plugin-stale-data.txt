@@ -1,0 +1,53 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'/home/ejacobcooper/st-saviour-java-24/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/ejacobcooper/st-saviour-java-24/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'saviour-2024 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/home/ejacobcooper/st-saviour-java-24/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'saviour-2024 1.0-SNAPSHOT API'
+fundamentals
+structures
+oop
+oop.mammals
+oop.automobiles
+/home/ejacobcooper/st-saviour-java-24/src/main/java = 1702302078345
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/element-list = 1705075380555
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/constant-values.html = 1705075380827
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/overview-tree.html = 1705075381425
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/package-search-index.js = 1705075381668
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/package-search-index.zip = 1705075381746
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/type-search-index.js = 1705075381748
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/type-search-index.zip = 1705075381748
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/member-search-index.js = 1705075381756
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/member-search-index.zip = 1705075381758
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/index-all.html = 1705075381769
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/allclasses-index.html = 1705075381818
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/allpackages-index.html = 1705075381843
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/deprecated-list.html = 1705075381877
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/allclasses.html = 1705075381902
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/index.html = 1705075381935
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/overview-summary.html = 1705075381961
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/help-doc.html = 1705075381989
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/stylesheet.css = 1705075382011
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/script.js = 1705075382013
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/search.js = 1705075382046
+/home/ejacobcooper/st-saviour-java-24/target/site/apidocs/jquery-ui.overrides.css = 1705075382163
