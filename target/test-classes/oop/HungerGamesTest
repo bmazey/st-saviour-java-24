@@ -1,0 +1,30 @@
+package oop;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+import oop.entertainment.Books;
+import oop.entertainment.HungerGames;
+
+public class HungerGamesTest {
+    @Test
+    public void testNewHungerGames() {
+        /*
+         * Enters a new hunger games book called mockingjay. 
+         */
+        HungerGames mockingjay = new HarryPotter("Mockingjay");
+        /*
+         * Checks that the name is mockingjay. 
+         */
+        assertEquals("Mockingjay", mockingjay.getTitle());
+        /*
+         * Checks if it is physical.       
+         */ 
+        assertEquals(true, mockingjay.isPhysical());
+        /*
+         * Assert that it is a book. 
+         */
+        assert mockingjay instanceof Books; 
+    }
+}

@@ -1,0 +1,53 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'/home/awood/st-saviour-java-24/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/awood/st-saviour-java-24/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'saviour-2024 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/home/awood/st-saviour-java-24/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'saviour-2024 1.0-SNAPSHOT API'
+fundamentals
+structures
+oop
+oop.mammals
+oop.entertainment
+/home/awood/st-saviour-java-24/src/main/java = 1701891091492
+/home/awood/st-saviour-java-24/target/site/apidocs/element-list = 1705073696677
+/home/awood/st-saviour-java-24/target/site/apidocs/constant-values.html = 1705073697045
+/home/awood/st-saviour-java-24/target/site/apidocs/overview-tree.html = 1705073697721
+/home/awood/st-saviour-java-24/target/site/apidocs/package-search-index.js = 1705073697809
+/home/awood/st-saviour-java-24/target/site/apidocs/package-search-index.zip = 1705073697864
+/home/awood/st-saviour-java-24/target/site/apidocs/type-search-index.js = 1705073697885
+/home/awood/st-saviour-java-24/target/site/apidocs/type-search-index.zip = 1705073697889
+/home/awood/st-saviour-java-24/target/site/apidocs/member-search-index.js = 1705073697890
+/home/awood/st-saviour-java-24/target/site/apidocs/member-search-index.zip = 1705073697891
+/home/awood/st-saviour-java-24/target/site/apidocs/index-all.html = 1705073697908
+/home/awood/st-saviour-java-24/target/site/apidocs/allclasses-index.html = 1705073697941
+/home/awood/st-saviour-java-24/target/site/apidocs/allpackages-index.html = 1705073697951
+/home/awood/st-saviour-java-24/target/site/apidocs/deprecated-list.html = 1705073697972
+/home/awood/st-saviour-java-24/target/site/apidocs/allclasses.html = 1705073697981
+/home/awood/st-saviour-java-24/target/site/apidocs/index.html = 1705073698007
+/home/awood/st-saviour-java-24/target/site/apidocs/overview-summary.html = 1705073698013
+/home/awood/st-saviour-java-24/target/site/apidocs/help-doc.html = 1705073698022
+/home/awood/st-saviour-java-24/target/site/apidocs/stylesheet.css = 1705073698032
+/home/awood/st-saviour-java-24/target/site/apidocs/script.js = 1705073698033
+/home/awood/st-saviour-java-24/target/site/apidocs/search.js = 1705073698042
+/home/awood/st-saviour-java-24/target/site/apidocs/jquery-ui.overrides.css = 1705073698080
