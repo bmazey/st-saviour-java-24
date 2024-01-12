@@ -2,6 +2,7 @@ package oop.automobiles;
 
 public final class ConcreteTruck extends Truck {
 
+    // Constructor method for 
     public ConcreteTruck(String license, int wheels) {
         super(license, wheels);
     }

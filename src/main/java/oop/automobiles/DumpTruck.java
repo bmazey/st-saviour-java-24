@@ -7,7 +7,7 @@ public final class DumpTruck extends Truck {
     }
 
     public void loadGarbage(String item) {
-        this.getCargo().add(item);
+        this.getCargo().add(item); // Adds an item to the cargo list (loads garbage)
     }
 
     public void dumpGarbage(String item) {

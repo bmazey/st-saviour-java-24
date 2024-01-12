@@ -15,7 +15,16 @@ public class ConcreteTruckTest {
 
         assertEquals("STSAVIOURJAVA", myConcreteTruck.getLicense());
 
-        assertEquals(8, myConcreteTruck.getWheels());
+        assertEquals(6, myConcreteTruck.getWheels());
 
+        myConcreteTruck.mixConcrete("HighPowerConcreteMixer");
+        assertEquals(1, myConcreteTruck.getCargo().size());
+        
+        myConcreteTruck.carryConcrete(null);
+        assertEquals(true, myConcreteTruck.getCargo().isEmpty());
+
+        assertEquals(true, myConcreteTruck.isManual());
+
+        assert myConcreteTruck instanceof Manual;
     }
 }
