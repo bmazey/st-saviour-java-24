@@ -7,11 +7,6 @@ public class Hello {
     public static void main(String[] args) {
         // this space is provided for experimentation purposes
         // System.out.println("new dawn, new day");
-
-
-        String result = FizzBuzz.fizzBuzz(30);
-        System.out.println("result: " + result);
-
         // discussion on errors
         // Java is strongly typed - what does that mean?
         // documentation: https://www.baeldung.com/java-primitives
@@ -77,9 +72,8 @@ public class Hello {
     int[] myArray = new int[]{4,4,3,1};
     System.out.println("array length: "+ myArray.length);
     System.out.println("first item: " + myArray[0]);
-    for (int i = 0; i< myArray.length; i++);
-    }
-
-    
+    for (int i = 0; i< myArray.length; i++) {
+        
+    }  
 
 }
