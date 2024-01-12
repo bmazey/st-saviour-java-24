@@ -1,0 +1,53 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'/home/ccadet/st-saviour-java-24/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/ccadet/st-saviour-java-24/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'saviour-2024 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/home/ccadet/st-saviour-java-24/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'saviour-2024 1.0-SNAPSHOT API'
+fundamentals
+structures
+oop
+oop.mammals
+oop.beverages
+/home/ccadet/st-saviour-java-24/src/main/java = 1701891093785
+/home/ccadet/st-saviour-java-24/target/site/apidocs/element-list = 1705073156033
+/home/ccadet/st-saviour-java-24/target/site/apidocs/constant-values.html = 1705073156165
+/home/ccadet/st-saviour-java-24/target/site/apidocs/overview-tree.html = 1705073156974
+/home/ccadet/st-saviour-java-24/target/site/apidocs/package-search-index.js = 1705073157172
+/home/ccadet/st-saviour-java-24/target/site/apidocs/package-search-index.zip = 1705073157217
+/home/ccadet/st-saviour-java-24/target/site/apidocs/type-search-index.js = 1705073157219
+/home/ccadet/st-saviour-java-24/target/site/apidocs/type-search-index.zip = 1705073157219
+/home/ccadet/st-saviour-java-24/target/site/apidocs/member-search-index.js = 1705073157220
+/home/ccadet/st-saviour-java-24/target/site/apidocs/member-search-index.zip = 1705073157223
+/home/ccadet/st-saviour-java-24/target/site/apidocs/index-all.html = 1705073157227
+/home/ccadet/st-saviour-java-24/target/site/apidocs/allclasses-index.html = 1705073157266
+/home/ccadet/st-saviour-java-24/target/site/apidocs/allpackages-index.html = 1705073157281
+/home/ccadet/st-saviour-java-24/target/site/apidocs/deprecated-list.html = 1705073157302
+/home/ccadet/st-saviour-java-24/target/site/apidocs/allclasses.html = 1705073157322
+/home/ccadet/st-saviour-java-24/target/site/apidocs/index.html = 1705073157356
+/home/ccadet/st-saviour-java-24/target/site/apidocs/overview-summary.html = 1705073157369
+/home/ccadet/st-saviour-java-24/target/site/apidocs/help-doc.html = 1705073157380
+/home/ccadet/st-saviour-java-24/target/site/apidocs/stylesheet.css = 1705073157398
+/home/ccadet/st-saviour-java-24/target/site/apidocs/script.js = 1705073157399
+/home/ccadet/st-saviour-java-24/target/site/apidocs/search.js = 1705073157406
+/home/ccadet/st-saviour-java-24/target/site/apidocs/jquery-ui.overrides.css = 1705073157490
