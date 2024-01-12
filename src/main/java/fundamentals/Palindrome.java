@@ -18,3 +18,4 @@ public class Palindrome {
         return word.equals(reverse);
      }
 }
+

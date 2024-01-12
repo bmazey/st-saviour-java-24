@@ -1,10 +1,12 @@
 package fundamentals;
 
 public class Hello {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         // this space is provided for experimentation purposes
         // System.out.println("new dawn, new day");
-
         // discussion on errors
         // Java is strongly typed - what does that mean?
         // documentation: https://www.baeldung.com/java-primitives
@@ -72,9 +74,7 @@ public class Hello {
     System.out.println("first item: " + myArray[0]);
     for (int i = 0; i< myArray.length; i++) {
         
-    }
-    }
-
-    
+    }  
+}
 
 }
