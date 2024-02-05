@@ -25,7 +25,7 @@ public class DumpTruckTest {
         assertEquals(1, myDumpTruck.getCargo().size());
 
         // Dump all the garbage from the DumpTruck and check if the cargo list is empty
-        myDumpTruck.dumpGarbage(null);
+        myDumpTruck.dumpGarbage();
         assertEquals(true, myDumpTruck.getCargo().isEmpty());
 
         // Assert that the DumpTruck is manual (uses a stickshift)

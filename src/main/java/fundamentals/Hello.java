@@ -16,14 +16,7 @@ public class Hello {
 
         double c = 3;
         System.out.println(a / b * c);
-
-        // casting 'down'
-        double d = 3.5;
-        System.out.println((int)d);
-
-        // casting 'up'
-        int e = 4;
-        System.out.println((double)e);
+  
 
         // char emojis
         String context = "lie for you, die for you, paint the sky for you ";

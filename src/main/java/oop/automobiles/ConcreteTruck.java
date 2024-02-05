@@ -14,7 +14,7 @@ public final class ConcreteTruck extends Truck {
         this.getCargo().add(item);  // Adds items to the cargo list (loads and mixes concrete)
     }
 
-    public void carryConcrete(String item) {
+    public void carryConcrete() {
         System.out.println("This truck can transport concrete to the construction site!");
         this.getCargo().clear();    // Clears all items from the cargo list (transports and dumps concrete at a site)
     }

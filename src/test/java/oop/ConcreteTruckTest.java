@@ -25,7 +25,7 @@ public class ConcreteTruckTest {
         assertEquals(1, myConcreteTruck.getCargo().size());
         
         // Dump all of the transported concrete and check if the cargo list is empty
-        myConcreteTruck.carryConcrete(null);
+        myConcreteTruck.carryConcrete();
         assertEquals(true, myConcreteTruck.getCargo().isEmpty());
 
         // Assert that the ConcreteTruck is manual (uses a stickshift)
